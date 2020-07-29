@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- ==============================
+    Project:        KVORUM
+    Version:        1.0
+    Author:         Anton Shaposhnikov / hesoyam666
+    Telegram:       @hesoyam_666
+================================== -->
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ВХІД</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta name="keywords" content="Страховая компания, Страхование грузов, страхование ответственности перевозчиков и экспедиторов, Страхование автотранспорта, страхование имущества, КАСКО, страхование здоровья, Корпоративное страхование, Страхова компанія, Страхування вантажів, страхування відповідальності перевізників та експедиторів, Страхування автотранспорту, страхування майна, страхування здоров'я, Корпоративне страхування">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <!-- THEME STYLES -->
+        <link href="css/main.min.css" rel="stylesheet" type="text/css"/>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/icons/favicon.ico"/>
+    </head>
+    <!-- BODY -->
+    <body>
+        <!--========== HEADER LAYOUT ==========-->
+        <header class="header">
+            <div class="container--header container--header-small">
+                <div class="header__left-side">
+
+                    <!-- Логотип -->
+                    <a href="index.html"><img src="img/kvorum-logo.png" alt="Кворум" class="header__logo"></a>
+
+                    <!-- Слоган -->
+                    <div class="header__tagline">
+                        <p>Прозорість. </p>
+                        <p>Відповідальність. </p>
+                        <p>Професіоналізм.</p>
+                    </div>
+
+                </div>
+
+                <!-- Кнопки Вход и Регистрация -->
+                <div class="header__right-side header__right-side--small">
+
+                    <!-- Соц.Сети -->
+                    <div class="header__socials header__socials--small">
+                        <div class="socials">
+                            <a target="_blank" href="https://www.instagram.com/deliverygroup_ua/"><img src="img/icons/instagram.svg" alt="instagram"></a>
+                            <a target="_blank" href="https://www.facebook.com/Deliveryauto"><img src="img/icons/facebook.svg" alt="facebook"></a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UC2ZxuQoIjvHGl2yR4FeS8qQ/featured"><img src="img/icons/youtube.svg" alt="youtube"></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/delivery-ltd/?trk=biz-companies-cym"><img src="img/icons/linkedin.svg" alt="linkedin"></a>
+                        </div>
+
+                        <!-- Смена языка -->
+                        <div class="dropdown">
+                            <div class="dropbtn__inner">
+                                <button class="dropbtn">Укр</button> 
+                                <div class="arrow arrow--header-small"></div>
+                            </div>
+                            <div class="dropdown-content dropdown-content--header-small">
+                                <a href="#">Рус</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__btn header__btn--small">
+                        <a href="login.html">ВХІД</a>
+                        <a href="sign-up.html">Реєстрація</a>
+                    </div>
+
+                    <!-- Поиск -->
+                    <!-- <form class="search-form">
+                        <input class="search-form__input" type="text" placeholder="Глобальний пошук договору страхування та інформації">
+                        <button class="search-form__button" type="submit"><img src="img/icons/search-glass.svg" alt=""></button>
+                    </form> -->
+                </div>
+            </div>
+            <!-- Уведомление под Шапокой -->
+            <div class="alert">
+                <div class="container--alert">
+                    <div class="alert__space">x</div>
+                    <p class="alert__text">СТРАХОВА КОМПАНІЯ «КВОРУМ» НА СТОРОЖІ БЕЗПЕЧНИХ ПЕРЕВЕЗЕНЬ ВАНТАЖІВ</p>
+                    <!-- <span class="close"></span> -->
+                    <img class="alert__close"src="img/icons/close.svg" alt="">
+                </div>
+            </div>
+        </header>
+
+        <!--========== \END HEADER LAYOUT ==========-->
+
+
+
+        <!--========== PAGE LAYOUT ==========-->
+        <section class="contact--container">
+                <img src="img/kvorum-logo.png" alt="" class="logo--middle">
+                
+                <div class="login">
+                    <h2 class="login__title">УВІЙТИ В АКАУНТ</h2>
+
+                    <div class="login__wrap">
+                        <div class="login__form">
+                            <form class="login__group login__group--input">
+                                <input class="input" type="text" placeholder=" ">
+                                <label class="label">Логін (емейл)</label>
+                            </form>
+
+                            <form class="login__group login__group--input">
+                                <input class="input" type="password" placeholder=" " data-type="password">
+                                <label class="label">Пароль</label>
+                            </form>
+
+                            <form class="login__group login__group--input">
+                                <input class="input" type="text" placeholder=" ">
+                                <label class="label">Номер договору</label>
+                            </form>
+
+                            <div class="login__group remember">
+                                <input id="check" type="checkbox" class="check" checked>
+                                <label class="remember__label" for="check">Запам’ятати мене  <span class="icon"></span></label>
+                            </div>
+
+                            <button type="submit" class="login__group--button">УВІЙТИ</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--========== \END PAGE LAYOUT ==========-->
+
+
+        <!-- ADD JQUERY HERE -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
