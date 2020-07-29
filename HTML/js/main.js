@@ -5,3 +5,9 @@
                 $(".alert").toggleClass("hide"); return false;
             });
         });;
+
+
+
+function print_doc(){
+window.print() ;
+}

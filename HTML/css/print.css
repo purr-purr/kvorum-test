@@ -1,0 +1,8 @@
+@media print {
+    header, section, .wrap-btn--contract, .button-print {
+        display: none;
+    }
+    #print__contract {
+        display: block; 
+    }
+}

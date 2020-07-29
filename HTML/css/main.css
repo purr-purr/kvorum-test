@@ -387,7 +387,7 @@ a:focus, a:hover, a:active {
 .wrapper-button-enter {
   display: flex;
   justify-content: center;
-  margin: 3.8vh auto 0 auto;
+  margin: 1.1vh auto 0 auto;
   width: 41.1vh;
   border-bottom: 1px solid #DCDCDC;
   padding-bottom: 1.8vh; }
@@ -415,7 +415,7 @@ a:focus, a:hover, a:active {
   font-weight: 400; }
 
 .wrapper-button-enter--reg {
-  margin: 1.1vh auto 0 auto; }
+  margin: 3.8vh auto 0 auto; }
 
 .search-form--reg {
   display: flex;
@@ -526,11 +526,13 @@ a:focus, a:hover, a:active {
   color: #FFF;
   width: 16.8vh;
   height: 4vh;
-  background: #A9C239; }
+  background: #A9C239;
+  border: none; }
   .button-print-inner:hover {
     background: #D8EE75;
     transition: linear 0.3s all;
-    color: #3C3C3C; }
+    color: #3C3C3C;
+    cursor: pointer; }
 
 .about-kvorum-link {
   margin-top: 11vh;
@@ -859,13 +861,16 @@ a:focus, a:hover, a:active {
 .recaptcha {
   display: flex;
   flex-direction: column; }
-  .recaptcha img {
-    margin: 0 auto;
-    width: 24.5vh;
-    height: 7.7vh; }
+  .recaptcha div {
+    margin: 0 auto; }
 
 .tabs .remember {
   margin: 1vh auto 1.3vh auto; }
 
 .sign-up__button {
   margin: 2vh auto 2vh auto; }
+
+.in-developing {
+  padding: 10vh 5vh 5vh 5vh;
+  text-align: center;
+  font-size: 3vh; }

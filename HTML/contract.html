@@ -8,12 +8,11 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8"/>
-        <title>Страховая компания. Страхование грузов, страхование ответственности перевозчиков и экспедиторов. Страхование автотранспорта, страхование имущества, КАСКО, страхование здоровья. Корпоративное страхование.</title>
+        <title>Інформація про предмет договору</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta name="keywords" content="Страховая компания, Страхование грузов, страхование ответственности перевозчиков и экспедиторов, Страхование автотранспорта, страхование имущества, КАСКО, страхование здоровья, Корпоративное страхование, Страхова компанія, Страхування вантажів, страхування відповідальності перевізників та експедиторів, Страхування автотранспорту, страхування майна, страхування здоров'я, Корпоративне страхування">
         <!-- Fonts -->
-        <!-- <link href="assets/fonts/font.css" rel="stylesheet" type="text/css"/> -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/normalize.css" rel="stylesheet">
@@ -21,6 +20,8 @@
         <link href="css/main.min.css" rel="stylesheet" type="text/css"/>
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/icons/favicon.ico"/>
+        <!-- Печать -->
+        <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
     </head>
     <!-- BODY -->
     <body>
@@ -43,7 +44,7 @@
                     <div class="header__socials">
                         <div class="socials">
                             <a target="_blank" href="https://www.instagram.com/deliverygroup_ua/"><img src="img/icons/instagram.svg" alt="instagram"></a>
-                            <a target="_blank" href="https://www.facebook.com/Deliveryauto"><img src="img/icons/facebook.svg" alt="facebook"></a>
+                            <a target="_blank" href="https://www.facebook.com/sk.kvorum/"><img src="img/icons/facebook.svg" alt="facebook"></a>
                             <a target="_blank" href="https://www.youtube.com/channel/UC2ZxuQoIjvHGl2yR4FeS8qQ/featured"><img src="img/icons/youtube.svg" alt="youtube"></a>
                             <a target="_blank" href="https://www.linkedin.com/company/delivery-ltd/?trk=biz-companies-cym"><img src="img/icons/linkedin.svg" alt="linkedin"></a>
                         </div>
@@ -55,8 +56,7 @@
                                 <div class="arrow"></div>
                             </div>
                             <div class="dropdown-content">
-                                <a href="#">Рус</a>
-                                <a href="#">Анг</a>
+                                <a href="in-developing.html">Рус</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,6 @@
                 <div class="container--alert">
                     <div class="alert__space">x</div>
                     <p class="alert__text">СТРАХОВА КОМПАНІЯ «КВОРУМ» НА СТОРОЖІ БЕЗПЕЧНИХ ПЕРЕВЕЗЕНЬ ВАНТАЖІВ</p>
-                    <!-- <span class="close"></span> -->
                     <img class="alert__close"src="img/icons/close.svg" alt="">
                 </div>
             </div>
@@ -95,7 +94,7 @@
         <section class="contact--container">
                 <img src="img/kvorum-logo.png" alt="" class="logo--middle">
                 
-                <div class="contract">
+                <div class="contract" id="print__contract">
                     <h2 class="contract__title">Інформація про предмет договору</h2>
 
                     <div class="table-wrapp">
@@ -131,7 +130,7 @@
                     </div>
 
                     <div class="button-print">
-                        <a href="#" class="button-print-inner">Роздрукувати</a>
+                        <button onclick="print_doc()" class="button-print-inner">Роздрукувати</button>
                     </div>
                 </div>
         </section>
