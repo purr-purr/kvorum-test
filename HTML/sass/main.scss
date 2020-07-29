@@ -1040,7 +1040,7 @@ a:focus, a:hover, a:active {
 	display: flex;
     justify-content: center;
 	width: 28vh;
-    margin: 4vh auto 4.4vh auto;
+    margin: 2.5vh auto 2vh auto;
 	& label {
 		left: auto;
 		font-weight: 400;
@@ -1081,98 +1081,59 @@ a:focus, a:hover, a:active {
 // 	Sign-up PAGE STYLE		sign-up.html			 //
 // ===================================================//
 
-
-
-
-
-.tabs { 
-	width: 91vh;
-	height: 78vh;
-	margin: 5vh auto 7vh auto;
+.sign-up {
+	width: 92vh;
+	height: 76vh;
+	margin: 0 auto;
 	background: #FFFFFF;
-	box-shadow: 4px 4px 4px rgba(117,117,117,0.1);
-	border-radius: 6px;
-	position: relative;
-	&__li {
-		float: left;
-		display: block;
-		width: 50%;
-		border-radius: 9px 9px 0px 0px;
-	}
-	&__input[type="radio"] {
-		position: absolute;
-		top: 0;
-		left: -9999px;
-	}
-	&__label {
-		display: block;
-		padding: 1.4vh 2.1vh;
-		border-radius: 2px 2px 0 0;
+	box-shadow: 5px 5px 4px rgba(117, 117, 117, 0.1);
+	border-radius: 9px;
+	padding: 2vh 4.5vh 0 7vh;
+	margin-bottom: 4.5vh;
+	&__title {
+		font-weight: 700;
 		font-size: 1.5vh;
 		line-height: 1.8vh;
-		font-weight: normal;
-		text-transform: uppercase;
-		background: #F4F4F4;
+		color: #000;
 		text-align: center;
-		cursor: pointer;
-		position: relative;
-		top: -3.6vh; 
-		&:hover {
-			cursor: pointer;
-		}
-	}
-	.tab-content{
-		z-index: 2;
-		display: none; 
-		overflow: hidden;
-		width: 100%;
-		font-size: 1.7vh;
-		line-height: 2.5vh;
-		padding: 0 2.5vh 2.5vh 2.5vh;  
-		position: absolute;
-		top: 5.3vh;
-		left: 0; 
-	}
-	//The Magic
-	[id^="tab"]:checked + .tabs__label { 
-		color: #A9C239; 
-		background-color: white;
-		border-radius: 6px 6px 0px 0px;
-		box-shadow: 4px -1px 3px rgba(117, 117, 117, 0.1);
-	}
-	[id^="tab"]:checked ~ [id^="tab-content"] {
-		display: block;
 	}
 }
-
-
-
 
 .login__group--inner {
 	display: flex;
     flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
+
+// .recaptcha {
+// 	display: flex;
+//     flex-direction: column;
+// 	width: 31vh;
+//     height: 8vh;
+// 	margin: 0 auto;
+// 	& div {
+// 		margin: 0 auto;
+// 		display: flex;
+// 		justify-content: center;
+// 	}
+// }
 
 .recaptcha {
 	display: flex;
     flex-direction: column;
-	& div {
+	& img {
 		margin: 0 auto;
+		width: 24.5vh;
+		height: 7.7vh;
 	}
 }
 
 
-.tabs .remember {
-	margin: 1vh auto 1.3vh auto;
-}
+
 
 .sign-up__button {
 	margin: 2vh auto 2vh auto;
 }
-
-
-
 
 
 
@@ -1186,3 +1147,5 @@ a:focus, a:hover, a:active {
 	text-align: center;
 	font-size: 3vh;
 }
+
+

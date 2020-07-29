@@ -8,7 +8,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8"/>
-        <title>ВХІД</title>
+        <title>Реєстрація</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta name="keywords" content="Страховая компания, Страхование грузов, страхование ответственности перевозчиков и экспедиторов, Страхование автотранспорта, страхование имущества, КАСКО, страхование здоровья, Корпоративное страхование, Страхова компанія, Страхування вантажів, страхування відповідальності перевізників та експедиторів, Страхування автотранспорту, страхування майна, страхування здоров'я, Корпоративне страхування">
@@ -47,7 +47,7 @@
                     <div class="header__socials header__socials--small">
                         <div class="socials">
                             <a target="_blank" href="https://www.instagram.com/deliverygroup_ua/"><img src="img/icons/instagram.svg" alt="instagram"></a>
-                            <a target="_blank" href="https://www.facebook.com/Deliveryauto"><img src="img/icons/facebook.svg" alt="facebook"></a>
+                            <a target="_blank" href="https://www.facebook.com/sk.kvorum/"><img src="img/icons/facebook.svg" alt="facebook"></a>
                             <a target="_blank" href="https://www.youtube.com/channel/UC2ZxuQoIjvHGl2yR4FeS8qQ/featured"><img src="img/icons/youtube.svg" alt="youtube"></a>
                             <a target="_blank" href="https://www.linkedin.com/company/delivery-ltd/?trk=biz-companies-cym"><img src="img/icons/linkedin.svg" alt="linkedin"></a>
                         </div>
@@ -59,7 +59,7 @@
                                 <div class="arrow arrow--header-small"></div>
                             </div>
                             <div class="dropdown-content dropdown-content--header-small">
-                                <a href="#">Рус</a>
+                                <a href="in-developing.html">Рус</a>
                             </div>
                         </div>
                     </div>
@@ -69,11 +69,6 @@
                         <a href="sign-up.html">Реєстрація</a>
                     </div>
 
-                    <!-- Поиск -->
-                    <!-- <form class="search-form">
-                        <input class="search-form__input" type="text" placeholder="Глобальний пошук договору страхування та інформації">
-                        <button class="search-form__button" type="submit"><img src="img/icons/search-glass.svg" alt=""></button>
-                    </form> -->
                 </div>
             </div>
             <!-- Уведомление под Шапокой -->
@@ -81,7 +76,6 @@
                 <div class="container--alert">
                     <div class="alert__space">x</div>
                     <p class="alert__text">СТРАХОВА КОМПАНІЯ «КВОРУМ» НА СТОРОЖІ БЕЗПЕЧНИХ ПЕРЕВЕЗЕНЬ ВАНТАЖІВ</p>
-                    <!-- <span class="close"></span> -->
                     <img class="alert__close"src="img/icons/close.svg" alt="">
                 </div>
             </div>
@@ -90,189 +84,85 @@
         <!--========== \END HEADER LAYOUT ==========-->
 
 
-
         <!--========== PAGE LAYOUT ==========-->
 
             <section class="contact--container">
                 <img src="img/kvorum-logo.png" alt="" class="logo--middle">
                 
-                <!-- Tabs sign-up -->
-                <ul class="tabs" role="tablist">
-                    <li class="tabs__li">
-                        <input class="tabs__input" type="radio" name="tabs" id="tab1" checked />
-                        <label class="tabs__label" for="tab1" 
-                            role="tab" 
-                            aria-selected="true" 
-                            aria-controls="panel1" 
-                            tabindex="0">ДЛЯ ФІЗИЧНИХ ОСІБ</label>
-                        <div id="tab-content1" 
-                            class="tab-content" 
-                            role="tabpanel" 
-                            aria-labelledby="description" 
-                            aria-hidden="false">
+                <!--sign-up -->
+                <div class="sign-up">
+                    <h2 class="sign-up__title">СТВОРИТИ АКАУНТ</h2>
 
+                    <div class="login__form">
+                        <div class="login__group--inner">
+                            <!-- 1я колонка -->
+                            <div>
+                                <form class="login__group login__group--input">
+                                    <input class="input" type="text" placeholder=" ">
+                                    <label class="label">Прізвище</label>
+                                </form>
 
+                                <form class="login__group login__group--input">
+                                    <input class="input" type="text" placeholder=" ">
+                                    <label class="label">Ім’я</label>
+                                </form>
 
-                            <div class="login__form">
-                                <div class="login__group--inner">
-                                    <!-- 1я колонка -->
-                                    <div>
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Прізвище</label>
-                                        </form>
+                                <form class="login__group login__group--input">
+                                    <input class="input" type="text" placeholder=" ">
+                                    <label class="label">По батькові</label>
+                                </form>
 
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Ім’я</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">По батькові</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="tel" placeholder=" ">
-                                            <label class="label">Телефон</label>
-                                        </form>
-                                    </div>
-                                    <!-- 2я колонка -->
-                                    <div>
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Місто</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Електронна адреса</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Номер договору</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="password" data-type="password" placeholder=" ">
-                                            <label class="label">Створіть пароль</label>
-                                        </form>
-                                    </div>
-
-                                    <form class="login__group login__group--input">
-                                        <input class="input" type="password" data-type="password" placeholder=" ">
-                                        <label class="label">Підтвердіть пароль</label>
-                                    </form>
-                                </div>
-
-                                <!-- Checkbox -->
-                                <div class="login__group remember">
-                                    <input id="check" type="checkbox" class="check" checked>
-                                    <label class="remember__label" for="check">Зареєструватись в програмі лояльності   <span class="icon"></span></label>
-                                </div>
-
-                                <!-- reCaptcha -->
-                                <div class="recaptcha">
-                                    <div class="g-recaptcha" data-sitekey="6Le8zrcZAAAAANBnwP2dn9k2BCVwmjG-jxUwujYG"></div>
-                                </div>
-
-                                <form action="contract.html">
-                                    <button type="submit" class="login__group--button sign-up__button">ЗАРЕЄСТУВАТИСЯ</button>
+                                <form class="login__group login__group--input">
+                                    <input class="input" type="tel" placeholder=" ">
+                                    <label class="label">Телефон</label>
                                 </form>
                             </div>
-                        </div>
-                    </li>
+                            <!-- 2я колонка -->
+                            <div>
+                                <form class="login__group login__group--input">
+                                    <input class="input" type="text" placeholder=" ">
+                                    <label class="label">Місто</label>
+                                </form>
 
+                                <form class="login__group login__group--input">
+                                    <input class="input" type="text" placeholder=" ">
+                                    <label class="label">Електронна адреса</label>
+                                </form>
 
-                <!-- TABS 2 -->
+                                <form class="login__group login__group--input">
+                                    <input class="input" type="text" placeholder=" ">
+                                    <label class="label">Номер договору</label>
+                                </form>
 
-
-                    <li class="tabs__li">
-                        <input class="tabs__input" type="radio" name="tabs" id="tab2" />
-                        <label class="tabs__label" for="tab2"
-                            role="tab" 
-                            aria-selected="false" 
-                            aria-controls="panel2" 
-                            tabindex="0">ДЛЯ ЮРИДИЧНИХ ОСІБ</label>
-                        <div id="tab-content2" 
-                            class="tab-content"
-                            role="tabpanel" 
-                            aria-labelledby="specification" 
-                            aria-hidden="true">
-
-
-                            <div class="login__form">
-                                <div class="login__group--inner">
-                                    <!-- 1я колонка -->
-                                    <div>
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Прізвище</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Ім’я</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">По батькові</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="tel" placeholder=" ">
-                                            <label class="label">Телефон</label>
-                                        </form>
-                                    </div>
-                                    <!-- 2я колонка -->
-                                    <div>
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Місто</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Електронна адреса</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="text" placeholder=" ">
-                                            <label class="label">Номер договору</label>
-                                        </form>
-
-                                        <form class="login__group login__group--input">
-                                            <input class="input" type="password" data-type="password" placeholder=" ">
-                                            <label class="label">Створіть пароль</label>
-                                        </form>
-                                    </div>
-
-                                    <form class="login__group login__group--input">
-                                        <input class="input" type="password" data-type="password" placeholder=" ">
-                                        <label class="label">Підтвердіть пароль</label>
-                                    </form>
-                                </div>
-
-                                <!-- Checkbox -->
-                                <div class="login__group remember">
-                                    <input id="check2" type="checkbox" class="check" checked>
-                                    <label class="remember__label" for="check2">Зареєструватись в програмі лояльності   <span class="icon"></span></label>
-                                </div>
-
-                                <!-- reCaptcha -->
-                                <div class="recaptcha">
-                                    <div class="g-recaptcha" data-sitekey="6Le8zrcZAAAAANBnwP2dn9k2BCVwmjG-jxUwujYG"></div>
-                                </div>
-                                
-                                <form action="contract.html">
-                                    <button type="submit" class="login__group--button sign-up__button">ЗАРЕЄСТУВАТИСЯ</button>
+                                <form class="login__group login__group--input">
+                                    <input class="input" type="password" data-type="password" placeholder=" ">
+                                    <label class="label">Створіть пароль</label>
                                 </form>
                             </div>
+
+                            <form class="login__group login__group--input">
+                                <input class="input" type="password" data-type="password" placeholder=" ">
+                                <label class="label">Підтвердіть пароль</label>
+                            </form>
                         </div>
-                    </li>
-                </ul>
+
+                        <!-- Checkbox -->
+                        <div class="login__group remember">
+                            <input id="check2" type="checkbox" class="check" checked>
+                            <label class="remember__label" for="check2">Зареєструватись в програмі лояльності   <span class="icon"></span></label>
+                        </div>
+
+                        <!-- reCaptcha -->
+                        <div class="recaptcha">
+                            <img src="img/reCaptcha.png" alt="">
+                            <!-- <div class="g-recaptcha" data-theme="light" data-sitekey="6Le8zrcZAAAAANBnwP2dn9k2BCVwmjG-jxUwujYG"></div> -->
+                        </div>
+                        
+                        <form action="contract.html">
+                            <button type="submit" class="login__group--button sign-up__button">ЗАРЕЄСТУВАТИСЯ</button>
+                        </form>
+                    </div>
+                </div>
             </section>
         <!--========== \END PAGE LAYOUT ==========-->
 
@@ -282,5 +172,6 @@
         <!-- PAGE LEVEL SCRIPTS -->
         <script src="js/main.js" type="text/javascript"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
+
     </body>
 </html>
