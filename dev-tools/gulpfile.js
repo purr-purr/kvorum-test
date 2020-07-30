@@ -9,7 +9,6 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
-var pug = require('gulp-pug');
 
 function sass_css(done) {
 	gulp.src('../HTML/sass/main.scss')
@@ -34,36 +33,4 @@ function watchSass() {
 	gulp.watch("../HTML/sass/main.scss", sass_css);
 }
 
-
 gulp.task('default', watchSass);
-
-
-
-
-	
-// function pug_html(done) {
-// 	gulp.task('pug', function(){
-// 		return gulp.src('../HTML/pug/*.pug',)
-// 			.pipe(pug({
-// 				// Your options in here.
-// 			}))
-// 			.pipe(gulp.dest('../HTML/'))
-// 			.pipe(browserSync.reload({stream: true}))
-// 	});
-// }
-
-// function watchPug() {
-// 	gulp.watch("../HTML/pug/*.pug", pug_html);
-// }
-
-
-// gulp.task('pug-compile', function buildHTML() {
-//     return gulp.src('../HTML/pug/*.pug')
-//         .pipe(pug({
-//             pretty: true
-//         }))
-//         .pipe(rename('../HTML/index.html'))
-//         .pipe(gulp.dest('../'))
-// });
-
-
