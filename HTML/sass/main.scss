@@ -53,6 +53,7 @@ a:focus, a:hover, a:active {
 //=========
 // HEADER
 //=========
+
 .header {
 	width: 100%;
 	background-color: #6E6E6E;
@@ -88,8 +89,6 @@ a:focus, a:hover, a:active {
 	display: flex;
 	justify-content: space-between;
 }
-
-
 
 
 
@@ -229,43 +228,42 @@ a:focus, a:hover, a:active {
 // Поиск
 .search-form {
 	position: relative;
-}
-
-.search-form__input {
-	width: 43.6vh;
-	height: 4.8vh;
-	padding-left: 0.8vh;
-	border-radius: 5px;
-	background: #fff;
-	border: none;
-	outline: none;
-	position: relative;
-	transition: .3s linear;
-	font-size: 1.4vh;
-	line-height: 1.6vh;
-}
-
-.search-form__button {
-	width: 5.4vh;
-	height: 4.8vh;
-	background: none;
-	border: none;
-	border-radius: 0px 5px 5px 0px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: #A9C239;
-	&:hover {
-		cursor: pointer;
-		background: #D8EE75;
-		transition: linear 0.3s all;
+	&__input {
+		width: 43.6vh;
+		height: 4.8vh;
+		padding-left: 0.8vh;
+		border-radius: 5px;
+		background: #fff;
+		border: none;
+		outline: none;
+		position: relative;
+		transition: .3s linear;
+		font-size: 1.4vh;
+		line-height: 1.6vh;
 	}
-	& img {
-		width: 2.5vh;
-		height: 2.4vh;
-		padding-top: 0.2vh;
+	&__button {
+		width: 5.4vh;
+		height: 4.8vh;
+		background: none;
+		border: none;
+		border-radius: 0px 5px 5px 0px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #A9C239;
+		&:hover {
+			cursor: pointer;
+			background: #D8EE75;
+			transition: linear 0.3s all;
+		}
+		& img {
+			width: 2.5vh;
+			height: 2.4vh;
+			padding-top: 0.2vh;
+		}
 	}
 }
+
 // \Поиск
 
 
@@ -282,8 +280,6 @@ a:focus, a:hover, a:active {
     justify-content: center;
     align-items: center;
 	text-align: center;
-	// position: absolute;
-	// bottom: -5.6vh;
 	&__text {
 		display: flex;
 		align-items: center;
@@ -402,23 +398,21 @@ a:focus, a:hover, a:active {
 .news {
 	width: 25.2vh;
 	padding-top: 5.5vh;
-}
-
-.news-block__item {
-	border-bottom: 1px solid #A9C239;
-	padding: 1.3vh 0;
-	&:hover {
-		opacity: .7;
+	&-block__item {
+		border-bottom: 1px solid #A9C239;
+		padding: 1.3vh 0;
+		&:hover {
+			opacity: .7;
+		}
 	}
-}
-
-.news__title {
-	font-weight: 500;
-	font-size: 2.5vh;
-	line-height: 2.9vh;
-	letter-spacing: 0.03em;
-	&:hover {
-		opacity: .7;
+	&__title {
+		font-weight: 500;
+		font-size: 2.5vh;
+		line-height: 2.9vh;
+		letter-spacing: 0.03em;
+		&:hover {
+			opacity: .7;
+		}
 	}
 }
 
@@ -434,6 +428,8 @@ a:focus, a:hover, a:active {
 	line-height: 1.8vh;
 	font-weight: 400;
 }
+
+
 
 
 
@@ -466,28 +462,27 @@ a:focus, a:hover, a:active {
 	background: #FFF;
 	box-shadow: 5px 5px 4px rgba(117, 117, 117, 0.1);
 	border-radius: 9px;
-}
-
-.next-step__title {
-	font-weight: bold;
-	font-size: 1.9vh;
-	line-height: 2.2vh;
-	letter-spacing: 0.06em;
-	color: #A9C239;
-	text-align: center;
-	margin: 4.3vh auto 3.2vh auto;
-}
-
-.next-step__text {
-	font-size: 1.4vh;
-	line-height: 1.9vh;
-	max-width: 60.2vh;
-	margin: 0 auto;
-	font-weight: 400;
-	&:last-child {
-		margin-bottom: 6vh;
+	&__title {
+		font-weight: bold;
+		font-size: 1.9vh;
+		line-height: 2.2vh;
+		letter-spacing: 0.06em;
+		color: #A9C239;
+		text-align: center;
+		margin: 4.3vh auto 3.2vh auto;
+	}
+	&__text {
+		font-size: 1.4vh;
+		line-height: 1.9vh;
+		max-width: 60.2vh;
+		margin: 0 auto;
+		font-weight: 400;
+		&:last-child {
+			margin-bottom: 6vh;
+		}
 	}
 }
+
 
 // Кропка "Выберите следующий шаг"
 .button--alert-registration {
@@ -501,6 +496,9 @@ a:focus, a:hover, a:active {
     justify-content: center;
 	margin-top: 5.5vh;
 }
+
+
+
 
 
 
@@ -574,6 +572,10 @@ a:focus, a:hover, a:active {
 	height: 4.8vh;
 	border: 1px solid #BABABA;
 }
+
+
+
+
 
 
 
@@ -668,55 +670,57 @@ a:focus, a:hover, a:active {
 // Button about kvorum
 .button-kvorum {
 	margin-top: 5.5vh;
-}
-
-.button-kvorum-inner {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-	font-size: 1.6vh;
-	line-height: 1.9vh;
-	letter-spacing: 0.06em;
-	font-weight: 500;
-	color: #FFF;
-	width: 57vh;
-	height: 4vh;
-	background: #A9C239;
-	&:hover {
-		background: #D8EE75;
-		transition: linear 0.3s all;
-		color: #3C3C3C;
+	&-inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.6vh;
+		line-height: 1.9vh;
+		letter-spacing: 0.06em;
+		font-weight: 500;
+		color: #FFF;
+		width: 57vh;
+		height: 4vh;
+		background: #A9C239;
+		&:hover {
+			background: #D8EE75;
+			transition: linear 0.3s all;
+			color: #3C3C3C;
+		}
 	}
 }
+
 // \End Button kvorum
 
 
 // Button Print
 .button-print {
 	margin-top: 3.5vh;
-}
-
-.button-print-inner {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-	font-size: 1.6vh;
-	line-height: 1.9vh;
-	letter-spacing: 0.06em;
-	font-weight: 400;
-	color: #FFF;
-	width: 16.8vh;
-	height: 4vh;
-	background: #A9C239;
-	border: none;
-	&:hover {
-		background: #D8EE75;
-		transition: linear 0.3s all;
-		color: #3C3C3C;
-		cursor: pointer;
+	&-inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.6vh;
+		line-height: 1.9vh;
+		letter-spacing: 0.06em;
+		font-weight: 400;
+		color: #FFF;
+		width: 16.8vh;
+		height: 4vh;
+		background: #A9C239;
+		border: none;
+		&:hover {
+			background: #D8EE75;
+			transition: linear 0.3s all;
+			color: #3C3C3C;
+			cursor: pointer;
+		}
 	}
 }
 // \End Button kvorum
+
+
+
 
 
 
@@ -741,26 +745,26 @@ a:focus, a:hover, a:active {
 .button-exit {
 	margin-top: 3.5vh;
 	margin-left: 3vh;
-}
-
-.button-exit-inner {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-	font-size: 1.6vh;
-	line-height: 1.9vh;
-	letter-spacing: 0.06em;
-	font-weight: 400;
-	color: #FFF;
-	width: 24.8vh;
-	height: 6vh;
-	background: #A9C239;
-	&:hover {
-		background: #D8EE75;
-		transition: linear 0.3s all;
-		color: #3C3C3C;
+	&-inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.6vh;
+		line-height: 1.9vh;
+		letter-spacing: 0.06em;
+		font-weight: 400;
+		color: #FFF;
+		width: 24.8vh;
+		height: 6vh;
+		background: #A9C239;
+		&:hover {
+			background: #D8EE75;
+			transition: linear 0.3s all;
+			color: #3C3C3C;
+		}
 	}
 }
+
 // \End Button Exit
 
 
@@ -768,26 +772,26 @@ a:focus, a:hover, a:active {
 // Button Offerta
 .button-offerta {
 	margin-top: 3.5vh;
-}
-
-.button-offerta-inner {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-	font-size: 1.6vh;
-	line-height: 1.9vh;
-	letter-spacing: 0.06em;
-	font-weight: 400;
-	color: #FFF;
-	width: 66vh;
-	height: 6vh;
-	background: #A9C239;
-	&:hover {
-		background: #D8EE75;
-		transition: linear 0.3s all;
-		color: #3C3C3C;
+	&-inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.6vh;
+		line-height: 1.9vh;
+		letter-spacing: 0.06em;
+		font-weight: 400;
+		color: #FFF;
+		width: 66vh;
+		height: 6vh;
+		background: #A9C239;
+		&:hover {
+			background: #D8EE75;
+			transition: linear 0.3s all;
+			color: #3C3C3C;
+		}
 	}
 }
+
 // \End Button offerta 
 
 
@@ -819,6 +823,8 @@ a:focus, a:hover, a:active {
 .dropdown-content--header-small a:first-child {
     padding: 0.7vh 1vh 1vh 0;
 }
+
+
 
 
 
@@ -889,6 +895,12 @@ a:focus, a:hover, a:active {
 		height: 22vh;
 	}
 }
+
+
+
+
+
+
 
 
 
@@ -1128,12 +1140,13 @@ a:focus, a:hover, a:active {
 	}
 }
 
-
-
-
 .sign-up__button {
 	margin: 2vh auto 2vh auto;
 }
+
+
+
+
 
 
 
@@ -1149,3 +1162,543 @@ a:focus, a:hover, a:active {
 }
 
 
+
+
+
+
+
+// ====================================================//
+// 					MEDIA							 //
+// ===================================================//
+
+
+
+
+// @media screen and (max-width: 480px) and (orientation: landscape) {
+
+// }
+
+@media screen and (orientation: portrait) {
+	.header {
+		&__left-side {
+			padding-top: 2.5vw;
+		}
+		&__logo {
+			margin-right: 4.6vw;
+			max-width: 22vw;
+			max-height: 6vw;
+		}
+		&__tagline {
+			margin-right: 3vw;
+			& p {
+				font-size: 1.6vw;
+				line-height: 1.9vw;
+			}
+		}
+	}
+	.container--header {
+		height: 18.1vw;
+		width: 97vw;
+	}
+	// Соц.Сети
+	.socials {
+		width: 11vw;
+		height: 2vw;
+		& img {
+			width: 1.8vw;
+			height: 1.8vw;
+		}
+	}
+	// Смена языка сайта
+	.dropdown {
+		margin-top: 2.6vw;
+	}
+	.dropbtn {
+		font-size: 1.2vw;
+		line-height: 1.4vw;
+	}
+	.dropdown-content a {
+		padding: 1vw 1vw 1vw 0;
+		font-size: 1.2vw;
+	}
+	.dropdown-content a:first-child {
+		padding: 2vw 1vw 1vw 0;
+	}
+	// Стрелка открытия списка языков
+	.arrow {
+		width: 1vw;
+		height: 0.9vw;
+		margin-left: 1vw;
+	}   
+	.dropdown:hover .arrow {
+		margin-top: 0.5vw;
+	}
+	// HEADER Right-Side
+	.header__right-side {
+		padding-top: 2.5vw;
+	}
+	.header__btn {
+		width: 16.8vw;
+		margin: 0 1.8vw 0 auto;
+		& a {
+			font-size: 1.4vw;
+			line-height: 1.6vw;
+			width: 16.8vw;
+			height: 4vw;
+			margin-bottom: 0.6vw;
+		}
+	}
+	// Поиск
+	.search-form {
+		&__input {
+			width: 43.6vw;
+			height: 4.8vw;
+			padding-left: 0.8vw;
+			font-size: 1.4vw;
+			line-height: 1.6vw;
+		}
+		&__button {
+			width: 5.4vw;
+			height: 4.8vw;
+			& img {
+				width: 2.5vw;
+				height: 2.4vw;
+				padding-top: 0.2vw;
+			}
+		}
+	}
+	// Уведомление под шапкой
+	.alert {
+		height: 5.6vw;
+		&__text {
+			font-size: 1.2vw;
+			line-height: 1.4vw;
+		}
+		&__close {
+			margin-right: 1.5vw;
+			width: 1.9vw;
+			height: 1.9vw;
+		}
+	}
+	.container--alert {
+		width: 114vw;
+		padding: 0 1.5vw;
+	}
+	// ===================================================//
+	// 			MEDIA FOR 				index.html		 //
+	// =================================================//
+	.container--home {
+		width: 114vw;
+		padding: 5.5vw 1.5vh 14.6vw 1.5vh;
+	}
+	.home__heading {
+		font-size: 1.2vw;
+		line-height: 1.4vw;
+	}
+	.home__main-news {
+		max-width: 63.3vw;
+		margin-top: 2vw;
+		h1 {
+			font-size: 2.5vw;
+			line-height: 2.9vw;
+			margin-bottom: 5vw;
+		}
+		img {
+			max-width: 67.3vw;
+			max-height: 38.5vw;
+		}
+	}
+	// Стили основной кнопки
+	.button--main {
+		font-size: 1.8vw;
+		line-height: 2.1vw;
+		width: 37.8vw;
+		height: 5.9vw;
+		padding: 2.1vw 10vw;
+	}
+	// Колонка Новости
+	.news {
+		width: 25.2vw;
+		padding-top: 5.5vw;
+		&-block__item {
+			padding: 1.3vw 0;
+		}
+		&__title {
+			font-size: 2.5vw;
+			line-height: 2.9vw;
+		}
+	}
+	.date {
+		font-size: 1.3vw;
+		line-height: 1.7vw;
+		padding-bottom: 1.2vw;
+	}
+	.title {
+		font-size: 1.4vw;
+		line-height: 1.8vw;
+	}
+
+	// =================================================================//
+	// 					MEDIA FOR 				alert-registration.html	 //
+	// =================================================================//
+	.container--alert-registration {
+		width: 95vw;
+	}
+	.logo--middle {
+		margin-top: 2.2vw;
+		max-width: 22vw;
+		max-height: 6vw;
+		margin: 2.2vw auto 2.5vw auto;
+	}
+	.next-step {
+		width: 80.5vw;
+		height: 65.4vw;
+		&__title {
+			font-size: 1.9vw;
+			line-height: 2.2vw;
+			margin: 4.3vw auto 3.2vw auto;
+		}
+		&__text {
+			font-size: 1.4vw;
+			line-height: 1.9vw;
+			max-width: 60.2vw;
+			&:last-child {
+				margin-bottom: 6vw;
+			}
+		}
+	}
+	// Кропка "Выберите следующий шаг"
+	.button--alert-registration {
+		padding: 2vw 3.5vw;
+	}
+	.button-wrapper {
+		margin-top: 5.5vw;
+	}
+
+
+	// ==============================================================//
+	// 				MEDIA FOR 					registration.html	 //
+	// ============================================================//
+
+	.choice-enter {
+		width: 55.8vw;
+		height: 31vw;
+		&__or {
+			margin-top: 0.6vw;
+		}
+	}
+	// Стили кнопок Вход и Рег
+	.wrapper-button-enter {
+		margin: 1.1vw auto 0 auto;
+		width: 41.1vw;
+		padding-bottom: 1.8vw;
+	}
+	.button-enter{
+		font-size: 1.5vw;
+		line-height: 1.8vw;
+		width: 16.8vw;
+		height: 4vw;
+	}
+	.button-enter--reg {
+		font-size: 1.4vw;
+		line-height: 1.6vw;
+	}
+	.wrapper-button-enter--reg {
+		margin: 3.8vw auto 0 auto;
+	}
+	.search-form--reg {
+		margin: 1vw auto 0 auto;
+	}
+	.search-form__input--reg {
+		width: 43.6vw;
+		height: 4.8vw;
+	}
+
+
+	// ======================================================//
+	// 				MEDIA FOR  				contract.html	 //
+	// ====================================================//
+	.contact--container {
+		width: 95vw;
+	}
+
+	.contract {
+		width: 92.4vw;
+		height: 75vw;
+		padding: 4.5vw 4.5vw 0 7vw;
+		&__title {
+			font-size: 1.8vw;
+			line-height: 2.1vw;
+		}
+	}
+	// TABLE
+	.table {
+		font-size: 1.4vw;
+		line-height: 1.6vw;
+		margin-top: 4.5vw;
+		& tr {
+			height: 3.7vw;
+		}
+		&__point {
+			width: 17vw;
+		}
+		&-wrapp {
+			flex-direction: column;
+		}
+	}
+	// BUTTONS //
+	.button-legal {
+		margin-top: 3.5vw;
+		justify-content: flex-start;
+	}
+	.button-legal-inner {
+		font-size: 1.6vw;
+		line-height: 1.9vw;
+		width: 44vw;
+		height: 4vw;
+	}
+	// Button about kvorum
+	.button-kvorum {
+		margin-top: 3.5vw;
+		&-inner {
+			font-size: 1.6vw;
+			line-height: 1.9vw;
+			width: 57vw;
+			height: 4vw;
+		}
+	}
+	// Button Print
+	.button-print {
+		margin-top: 3.5vw;
+		&-inner {
+			font-size: 1.6vw;
+			line-height: 1.9vw;
+			width: 16.8vw;
+			height: 4vw;
+		}
+	}
+
+
+	// ===========================================================//
+	// 				MEDIA FOR					about-kvorum.html //
+	// ==========================================================//
+	.about-kvorum-link {
+		margin-top: 11vw;
+		font-size: 1.6vw;
+		line-height: 1.9vw;
+	}
+	.wrap-btn--about-kvorum {
+		margin-top: 8.5vw;
+	}
+	// Button Exit
+	.button-exit {
+		margin-top: 3.5vw;
+		margin-left: 3vw;
+		&-inner {
+			font-size: 1.6vw;
+			line-height: 1.9vw;
+			width: 24.8vw;
+			height: 6vw;
+		}
+	}
+	// Button Offerta
+	.button-offerta {
+		margin-top: 3.5vw;
+		&-inner {
+			font-size: 1.6vw;
+			line-height: 1.9vw;
+			width: 66vw;
+			height: 6vw;
+		}
+	}
+	// Small header
+	.container--header-small {
+		height: 11vw;
+	}
+	.header__right-side--small {
+		padding-top: 2vw;
+	}
+	.header__socials--small {
+		margin-right: 4vw;
+		margin-top: 1vw;
+	}
+	.dropdown-content--header-small a:first-child {
+		padding: 0.7vw 1vw 1vw 0;
+	}
+
+
+
+	// ====================================================//
+	// 			MEDIA FOR 				offerta.html	 //
+	// ===================================================//
+
+	.offerta {
+		width: 88vw;
+		padding-bottom: 12vw;
+		&__text {
+			font-size: 1.4vw;
+			line-height: 1.7vw;
+		}
+		&__title--main {
+			font-size: 1.6vw;
+			line-height: 1.9vw;
+			margin-bottom: 4.5vw;
+			margin-top: 2.5vw;
+		}
+		&__title {
+			font-size: 1.6vw;
+			line-height: 1.9vw;
+			margin-bottom: 1.2vw;
+			margin-top: 2.8vw;
+		}
+		&__text--right {
+			margin-bottom: 8vw;
+		}
+	}
+	// Штамп
+	.offerta__stamp {
+		margin-bottom: 7vw;
+	}
+	.stamp--second {
+		& img {
+			width: 22vw;
+			height: 22vw;
+		}
+	}
+
+
+	// ====================================================//
+	// 			MEDIA FOR 				login.html		 //
+	// ===================================================//
+	.login {
+		width: 64vw;
+		height: 55vw;
+		padding: 4.5vw 4.5vw 0 7vw;
+		&__title {
+			font-size: 1.5vw;
+			line-height: 1.8vw;
+		}
+	}
+	.login__group .label,
+	.login__group .input{
+		width: 37vw;
+		height: 5vw;
+	}
+	.login__group .input {
+		padding: 1.5vw 2.0vw;
+	}
+	.login__group .label {
+		font-size: 1.4vw;
+		line-height: 1.6vw;
+		height: 0vw;
+	}
+	.login__group label .icon{
+		width: 2vw;
+		height: 2vw;
+		border: 0.1vw solid #898989;
+		margin-left: 1vw;
+	}
+	.login__group label .icon:before,
+	.login__group label .icon:after{
+		content:'';
+		width: 1.3vw;
+		height: 0.2vw;
+	}
+	.login__group label .icon:before{
+		left: 0.1vw;
+		width: 0.8vw;
+		bottom: 0.6vw;
+	}
+	.login__group label .icon:after{
+		top: 0.7vw;
+	}
+	.login__group {
+		padding-top: 4vw;
+		margin-bottom: 1vw;
+		& label {
+		left: 1.3vw;
+		top: 5.6vw;
+		}
+		& input{
+		padding: 0.5vw;
+		border: 0.1vw solid #ccc;
+		}
+		& input:focus+label,
+		& input:not(:placeholder-shown)+label{
+		top: 1.7vw;
+		}
+	}
+	.remember {
+		width: 17vw;
+		margin: 2.5vw auto 2vw auto;
+		& label {
+			font-size: 1.2vw;
+			line-height: 1.4vw;
+		}
+	}
+	.remember--reg {
+		width: 28vw;
+	}
+	// Button Login
+	.login__group--button {
+		font-size: 1.8vw;
+		line-height: 2.1vw;
+		width: 35vw;
+		height: 6vw;
+	}
+	// \End Button login
+
+
+	// ========================================================//
+	// 			MEDIA FOR					sign-up.html	 //
+	// =======================================================//
+	.sign-up {
+		width: 92vw;
+		height: 85vw;
+		padding: 2vw 4.5vw 0 7vw;
+		margin-bottom: 4.5vw;
+		&__title {
+			font-size: 1.5vw;
+			line-height: 1.8vw;
+		}
+	}
+	// .recaptcha {
+	// 		width: 31vw;
+	//     height: 8vw;
+	// }
+	.recaptcha {
+		& img {
+			width: 24.5vw;
+			height: 7.7vw;
+		}
+	}
+	.sign-up__button {
+		margin: 2vw auto 2vw auto;
+	}
+
+
+
+	// ====================================================//
+	// 			MEDIA FOR 			in-developing.html	 //
+	// ===================================================//
+	.in-developing {
+		padding: 10vw 5vw 5vw 5vw;
+		font-size: 3vw;
+	}
+}
+
+
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+
+}
