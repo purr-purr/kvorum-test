@@ -1303,7 +1303,9 @@ a:focus, a:hover, a:active {
 }
 
 
-
+.search-mobile {
+	display: none;
+}
 
 
 
@@ -2095,10 +2097,21 @@ a:focus, a:hover, a:active {
 	}
 
 	.search-form__input--reg {
+		display: none;
+	}
+	.search-mobile {
+		display: block;
 		width: 80.1vw;
 		height: 10.5vw;
 		font-size: 3vw;
 		padding-right: 14vw;
+		padding: 2vw 12vw 0 1vw;
+		line-height: 7vw;
+		&::placeholder {
+			vertical-align: middle;
+			padding: 0vw 1vw 1vw 1vw;
+			line-height: 3vw;
+		}
 	}
 
 	.search-form__button {
@@ -2611,12 +2624,22 @@ a:focus, a:hover, a:active {
 		margin: 6vh auto 0 auto;
 		width: 95%;
 	}
-
 	.search-form__input--reg {
+		display: none;
+	}
+	.search-mobile {
+		display: block;
 		width: 80.1vh;
 		height: 10.5vh;
 		font-size: 3vh;
 		padding-right: 14vh;
+		padding: 2vh 12vh 0 1vh;
+		line-height: 7vh;
+		&::placeholder {
+			vertical-align: middle;
+			padding: 0vh 1vh 1vh 1vh;
+			line-height: 3vh;
+		}
 	}
 
 	.search-form__button {
