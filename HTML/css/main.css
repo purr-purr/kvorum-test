@@ -205,6 +205,71 @@ a:focus, a:hover, a:active {
       height: 2.4vh;
       padding-top: 0.2vh; }
 
+.header-mobile {
+  display: none;
+  width: 100%; }
+  .header-mobile__top-side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    height: max-content;
+    background-color: #E5E5E5; }
+    .header-mobile__top-side a {
+      margin: 0 auto; }
+  .header-mobile__down-side {
+    background-color: #A9C239; }
+  .header-mobile__contacts {
+    padding: 4vw 1vw;
+    width: max-content;
+    margin: 0 auto; }
+  .header-mobile__logo {
+    max-width: 141vh;
+    max-height: 8.7vh; }
+  .header-mobile__tagline {
+    display: block;
+    text-align: center; }
+    .header-mobile__tagline p {
+      color: #181818;
+      font-size: 3.2vw;
+      line-height: 5vw; }
+
+.wrap-btn-main-mobile {
+  display: none;
+  background-color: #A9C239;
+  width: 90%;
+  height: 8vw;
+  margin: 0 auto;
+  align-items: center; }
+  .wrap-btn-main-mobile a {
+    font-size: 3vw;
+    line-height: 2.1vw;
+    color: #fff; }
+
+.contact__item {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin-bottom: 3vw; }
+  .contact__item .item__text {
+    font-size: 3.2vw;
+    line-height: 3vw;
+    font-weight: 400;
+    color: #fff; }
+  .contact__item:last-child {
+    margin-bottom: 0; }
+  .contact__item .item__icon {
+    width: 3vw;
+    margin-right: 2vw; }
+
+.container--header {
+  height: 18.1vh;
+  width: 114vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
 .alert {
   background-color: #C7D684;
   height: 5.6vh;
@@ -1155,3 +1220,29 @@ a:focus, a:hover, a:active {
   .in-developing {
     padding: 10vw 5vw 5vw 5vw;
     font-size: 3vw; } }
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .header, .news, .home__heading {
+    display: none; }
+  .header-mobile {
+    display: block; }
+  .container--home {
+    justify-content: center; }
+  .home__main-news {
+    max-width: 84vw;
+    margin-top: 2vw;
+    text-align: center; }
+    .home__main-news h1 {
+      font-size: 3.5vw;
+      line-height: 3.9vw;
+      margin-bottom: 7.5vw;
+      text-align: center; }
+    .home__main-news img {
+      max-width: 83.3vw;
+      max-height: 51.5vw; }
+  .button--main {
+    display: none; }
+  .wrap-btn-main-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center; } }

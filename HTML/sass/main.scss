@@ -82,6 +82,7 @@ a:focus, a:hover, a:active {
 		}
 	}
 }
+
 .container--header {
 	height: 18.1vh;
 	width: 114vh;
@@ -265,6 +266,121 @@ a:focus, a:hover, a:active {
 }
 
 // \Поиск
+
+
+
+
+
+
+
+//=================================//
+// HEADER MOBILE    after 768px    //
+//=================================//
+
+
+.header-mobile {
+	display: none;
+	width: 100%;
+	// HEADER Left-Side
+	&__top-side {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 2.5vh;
+		padding-bottom: 2.5vh;
+		height: max-content;
+		background-color: #E5E5E5;;
+		& a {
+			margin: 0 auto;
+		}
+	}
+	&__down-side {
+		background-color: #A9C239;
+	}
+	&__contacts {
+		padding: 4vw 1vw;
+		width: max-content;
+    	margin: 0 auto;
+	}
+	&__logo {
+		max-width: 141vh;
+		max-height: 8.7vh;
+	}
+	&__tagline {
+		display: block;
+    	text-align: center;
+		& p {
+			color: #181818;
+			font-size: 3.2vw;
+			line-height: 5vw;
+		}
+	}
+}
+
+
+.wrap-btn-main-mobile {
+	display: none;
+	background-color: #A9C239;
+	width: 90%;
+	height: 8vw;
+	margin: 0 auto;
+	align-items: center;
+	a {
+		font-size: 3vw;
+		line-height: 2.1vw;
+		color: #fff;
+	}
+}
+
+.contact__item {
+	display: flex;
+    justify-content: center;
+	width: max-content;
+	margin-bottom: 3vw;
+	.item__text {
+		font-size: 3.2vw;
+		line-height: 3vw;
+		font-weight: 400;
+		color: #fff;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.item__icon {
+		width: 3vw;
+		margin-right: 2vw;
+	}
+}
+
+
+.container--header {
+	height: 18.1vh;
+	width: 114vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1337,7 +1453,6 @@ a:focus, a:hover, a:active {
 		font-size: 1.4vw;
 		line-height: 1.8vw;
 	}
-
 	// =================================================================//
 	// 					MEDIA FOR 				alert-registration.html	 //
 	// =================================================================//
@@ -1374,12 +1489,9 @@ a:focus, a:hover, a:active {
 	.button-wrapper {
 		margin-top: 5.5vw;
 	}
-
-
 	// ==============================================================//
 	// 				MEDIA FOR 					registration.html	 //
 	// ============================================================//
-
 	.choice-enter {
 		width: 55.8vw;
 		height: 31vw;
@@ -1413,15 +1525,12 @@ a:focus, a:hover, a:active {
 		width: 43.6vw;
 		height: 4.8vw;
 	}
-
-
 	// ======================================================//
 	// 				MEDIA FOR  				contract.html	 //
 	// ====================================================//
 	.contact--container {
 		width: 95vw;
 	}
-
 	.contract {
 		width: 92.4vw;
 		height: 75vw;
@@ -1477,8 +1586,6 @@ a:focus, a:hover, a:active {
 			height: 4vw;
 		}
 	}
-
-
 	// ===========================================================//
 	// 				MEDIA FOR					about-kvorum.html //
 	// ==========================================================//
@@ -1525,13 +1632,9 @@ a:focus, a:hover, a:active {
 	.dropdown-content--header-small a:first-child {
 		padding: 0.7vw 1vw 1vw 0;
 	}
-
-
-
 	// ====================================================//
 	// 			MEDIA FOR 				offerta.html	 //
 	// ===================================================//
-
 	.offerta {
 		width: 88vw;
 		padding-bottom: 12vw;
@@ -1565,8 +1668,6 @@ a:focus, a:hover, a:active {
 			height: 22vw;
 		}
 	}
-
-
 	// ====================================================//
 	// 			MEDIA FOR 				login.html		 //
 	// ===================================================//
@@ -1647,8 +1748,6 @@ a:focus, a:hover, a:active {
 		height: 6vw;
 	}
 	// \End Button login
-
-
 	// ========================================================//
 	// 			MEDIA FOR					sign-up.html	 //
 	// =======================================================//
@@ -1675,9 +1774,6 @@ a:focus, a:hover, a:active {
 	.sign-up__button {
 		margin: 2vw auto 2vw auto;
 	}
-
-
-
 	// ====================================================//
 	// 			MEDIA FOR 			in-developing.html	 //
 	// ===================================================//
@@ -1689,7 +1785,42 @@ a:focus, a:hover, a:active {
 
 
 
+
+
+
 @media screen and (max-width: 767px) and (orientation: portrait) {
+	.header, .news, .home__heading {
+		display: none;
+	}
+	.header-mobile {
+		display: block;
+	}
+	.container--home {
+		justify-content: center;
+	}
+	.home__main-news {
+		max-width: 84vw;
+		margin-top: 2vw;
+		text-align: center;
+		h1 {
+			font-size: 3.5vw;
+			line-height: 3.9vw;
+			margin-bottom: 7.5vw;
+			text-align: center;
+		}
+		img {
+			max-width: 83.3vw;
+			max-height: 51.5vw;
+		}
+	}
+	.button--main {
+		display: none;
+	}
+	.wrap-btn-main-mobile {
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	}
 
 }
 
