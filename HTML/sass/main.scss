@@ -2699,11 +2699,12 @@ a:focus, a:hover, a:active {
 
 	.login__group label .icon:before {
 		left: 0.1vh;
-		width: 1.8vh;
+		width: 1.7vh;
 		bottom: 0.8vh;
 	}
 
 	.login__group label .icon:after {
 		top: 1.7vh;
+		right: -0.2vh;
 	}
 }	
