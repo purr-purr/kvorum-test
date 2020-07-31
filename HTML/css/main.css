@@ -1729,7 +1729,7 @@ a:focus, a:hover, a:active {
     .table tr {
       height: 11.7vh; }
     .table__point {
-      width: 30vh;
+      width: 40vh;
       font-weight: 400; }
     .table__result {
       font-weight: 500;
