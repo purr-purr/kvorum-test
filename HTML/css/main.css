@@ -1398,7 +1398,7 @@ a:focus, a:hover, a:active {
     .table tr {
       height: 11.7vw; }
     .table__point {
-      width: 30vw;
+      width: 40vw;
       font-weight: 400; }
     .table__result {
       font-weight: 500;
@@ -1729,7 +1729,7 @@ a:focus, a:hover, a:active {
     .table tr {
       height: 11.7vh; }
     .table__point {
-      width: 40vh;
+      width: 50vh;
       font-weight: 400; }
     .table__result {
       font-weight: 500;
