@@ -372,17 +372,15 @@ a:focus, a:hover, a:active {
     letter-spacing: 0.03em; }
     .news__title:hover {
       opacity: .7; }
-
-.date {
-  font-size: 1.3vh;
-  line-height: 1.7vh;
-  color: #A9C239;
-  padding-bottom: 1.2vh; }
-
-.title {
-  font-size: 1.4vh;
-  line-height: 1.8vh;
-  font-weight: 400; }
+  .news .date {
+    font-size: 1.3vh;
+    line-height: 1.7vh;
+    color: #A9C239;
+    padding-bottom: 1.2vh; }
+  .news .title {
+    font-size: 1.4vh;
+    line-height: 1.8vh;
+    font-weight: 400; }
 
 .container--alert-registration {
   width: 114vh;
@@ -474,11 +472,10 @@ a:focus, a:hover, a:active {
     background: #D8EE75;
     transition: linear 0.3s all;
     color: #3C3C3C; }
-
-.button-enter--reg {
-  font-size: 1.4vh;
-  line-height: 1.6vh;
-  font-weight: 400; }
+  .button-enter--reg {
+    font-size: 1.4vh;
+    line-height: 1.6vh;
+    font-weight: 400; }
 
 .wrapper-button-enter--reg {
   margin: 3.8vh auto 0 auto; }
@@ -699,11 +696,10 @@ a:focus, a:hover, a:active {
   .offerta__text--right {
     text-align: right;
     margin-bottom: 8vh; }
-
-.offerta__stamp {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 7vh; }
+  .offerta__stamp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7vh; }
 
 .stamp--first {
   display: flex;
@@ -750,10 +746,6 @@ a:focus, a:hover, a:active {
   box-shadow: 0px 4px 4px rgba(109, 109, 109, 0.25);
   border-radius: 5px;
   margin: 0 auto; }
-
-.login__group input[data-type="password"] {
-  text-security: circle;
-  -webkit-text-security: circle; }
 
 .login__group .label {
   font-size: 1.4vh;
@@ -879,30 +871,20 @@ a:focus, a:hover, a:active {
     line-height: 1.8vh;
     color: #000;
     text-align: center; }
+  .sign-up__button {
+    margin: 2vh auto 2vh auto; }
 
 .login__group--inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
 
-.sign-up__button {
-  margin: 2vh auto 2vh auto; }
-
 .in-developing {
   padding: 10vh 5vh 5vh 5vh;
   text-align: center;
   font-size: 3vh; }
 
-.header-mobile {
-  display: none; }
-
-.wrap-btn-main-mobile {
-  display: none; }
-
-.sign-up__title--mobile {
-  display: none; }
-
-.search-mobile {
+.header-mobile, .wrap-btn-main-mobile, .sign-up__title--mobile, .search-mobile {
   display: none; }
 
 @media screen and (orientation: portrait) {
@@ -1049,9 +1031,9 @@ a:focus, a:hover, a:active {
     line-height: 1.8vw;
     width: 16.8vw;
     height: 4vw; }
-  .button-enter--reg {
-    font-size: 1.4vw;
-    line-height: 1.6vw; }
+    .button-enter--reg {
+      font-size: 1.4vw;
+      line-height: 1.6vw; }
   .wrapper-button-enter--reg {
     margin: 3.8vw auto 0 auto; }
   .search-form--reg {
@@ -1081,11 +1063,11 @@ a:focus, a:hover, a:active {
   .button-legal {
     margin-top: 3.5vw;
     justify-content: flex-start; }
-  .button-legal-inner {
-    font-size: 1.6vw;
-    line-height: 1.9vw;
-    width: 44vw;
-    height: 4vw; }
+    .button-legal-inner {
+      font-size: 1.6vw;
+      line-height: 1.9vw;
+      width: 44vw;
+      height: 4vw; }
   .button-kvorum {
     margin-top: 3.5vw; }
     .button-kvorum-inner {
@@ -1148,8 +1130,8 @@ a:focus, a:hover, a:active {
       margin-top: 2.8vw; }
     .offerta__text--right {
       margin-bottom: 8vw; }
-  .offerta__stamp {
-    margin-bottom: 7vw; }
+    .offerta__stamp {
+      margin-bottom: 7vw; }
   .stamp--second img {
     width: 22vw;
     height: 22vw; }
@@ -1198,19 +1180,19 @@ a:focus, a:hover, a:active {
     .login__group input:focus + label,
     .login__group input:not(:placeholder-shown) + label {
       top: 1.7vw; }
+    .login__group--button {
+      font-size: 1.8vw;
+      line-height: 2.1vw;
+      width: 35vw;
+      height: 6vw; }
   .remember {
     width: 17vw;
     margin: 2.5vw auto 2vw auto; }
     .remember label {
       font-size: 1.2vw;
       line-height: 1.4vw; }
-  .remember--reg {
-    width: 28vw; }
-  .login__group--button {
-    font-size: 1.8vw;
-    line-height: 2.1vw;
-    width: 35vw;
-    height: 6vw; }
+    .remember--reg {
+      width: 28vw; }
   .sign-up {
     width: 92vw;
     height: 85vw;
@@ -1219,14 +1201,14 @@ a:focus, a:hover, a:active {
     .sign-up__title {
       font-size: 1.5vw;
       line-height: 1.8vw; }
-  .sign-up__button {
-    margin: 2vw auto 2vw auto; }
+    .sign-up__button {
+      margin: 2vw auto 2vw auto; }
   .in-developing {
     padding: 10vw 5vw 5vw 5vw;
     font-size: 3vw; } }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
-  .header, .news, .home__heading {
+  .header, .news, .home__heading, .button--main {
     display: none; }
   .container--home {
     justify-content: center; }
@@ -1242,8 +1224,6 @@ a:focus, a:hover, a:active {
     .home__main-news img {
       max-width: 83.3vw;
       max-height: 51.5vw; }
-  .button--main {
-    display: none; }
   .header-mobile {
     display: block;
     width: 100%; }
@@ -1458,10 +1438,10 @@ a:focus, a:hover, a:active {
     .offerta__text--right {
       text-align: right;
       margin-bottom: 8vw; }
-  .offerta__stamp {
-    flex-direction: column;
-    margin-bottom: 10vw;
-    margin-top: 6vw; }
+    .offerta__stamp {
+      flex-direction: column;
+      margin-bottom: 10vw;
+      margin-top: 6vw; }
   .stamp--second {
     flex-direction: column; }
     .stamp--second img {
@@ -1504,26 +1484,30 @@ a:focus, a:hover, a:active {
   .login__group {
     padding-top: 6vw;
     margin-bottom: 1vw; }
-  .login__group .input {
-    width: 75vw;
-    height: 10vw; }
-  .login__group .label {
-    font-size: 3vw;
-    line-height: 5.6vw;
-    top: 8vw; }
+    .login__group--inner {
+      justify-content: center; }
+    .login__group .input {
+      width: 75vw;
+      height: 10vw; }
+    .login__group .label {
+      font-size: 3vw;
+      line-height: 5.6vw;
+      top: 8vw; }
+    .login__group--button {
+      font-size: 3.5vw;
+      line-height: 2.1vw;
+      width: 100%;
+      height: 9vw; }
   .login__group input:focus + label, .login__group input:not(:placeholder-shown) + label {
     top: 1vw; }
-  .login__group--button {
-    font-size: 3.5vw;
-    line-height: 2.1vw;
-    width: 100%;
-    height: 9vw; }
   .remember {
     width: 37vw;
     margin: 5vw auto 6vw auto; }
     .remember label {
       font-size: 3vw;
       line-height: 2.1vw; }
+    .remember--reg {
+      width: 65vw; }
   .login__group label .icon {
     width: 4vw;
     height: 4vw;
@@ -1555,14 +1539,10 @@ a:focus, a:hover, a:active {
       font-size: 4vw;
       height: 11vw;
       margin-top: 5vw;
-      margin-bottom: 5vw; }
-  .login__group--inner {
-    justify-content: center; }
-  .remember--reg {
-    width: 65vw; } }
+      margin-bottom: 5vw; } }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
-  .header, .news, .home__heading {
+  .header, .news, .home__heading, .button--main {
     display: none; }
   .container--home {
     justify-content: center; }
@@ -1578,8 +1558,6 @@ a:focus, a:hover, a:active {
     .home__main-news img {
       max-width: 71.3vw;
       max-height: 51.5vw; }
-  .button--main {
-    display: none; }
   .header-mobile {
     display: block;
     width: 100%; }
@@ -1743,12 +1721,12 @@ a:focus, a:hover, a:active {
       width: 30vh; }
   .button-legal {
     margin-top: 3.5vh; }
-  .button-legal-inner {
-    font-size: 3.5vh;
-    line-height: 1.9vh;
-    width: 100%;
-    height: 10vh;
-    padding: 0 3vw; }
+    .button-legal-inner {
+      font-size: 3.5vh;
+      line-height: 1.9vh;
+      width: 100%;
+      height: 10vh;
+      padding: 0 3vw; }
   .button-kvorum {
     margin-top: 5.5vh; }
     .button-kvorum-inner {
@@ -1793,8 +1771,8 @@ a:focus, a:hover, a:active {
     .offerta__text--right {
       text-align: right;
       margin-bottom: 8vh; }
-  .offerta__stamp {
-    margin-bottom: 7vh; }
+    .offerta__stamp {
+      margin-bottom: 7vh; }
   .stamp--second img {
     width: 40vh;
     height: 40vh; }
@@ -1831,26 +1809,30 @@ a:focus, a:hover, a:active {
   .login__group {
     padding-top: 6vh;
     margin-bottom: 1vh; }
-  .login__group .input {
-    width: 75vh;
-    height: 10vh; }
-  .login__group .label {
-    font-size: 3vh;
-    line-height: 5.6vh;
-    top: 8vh; }
+    .login__group .input {
+      width: 75vh;
+      height: 10vh; }
+    .login__group .label {
+      font-size: 3vh;
+      line-height: 5.6vh;
+      top: 8vh; }
+    .login__group--button {
+      font-size: 3.5vh;
+      line-height: 2.1vh;
+      width: 100%;
+      height: 9vh; }
+    .login__group--inner {
+      justify-content: center; }
   .login__group input:focus + label, .login__group input:not(:placeholder-shown) + label {
     top: 1vh; }
-  .login__group--button {
-    font-size: 3.5vh;
-    line-height: 2.1vh;
-    width: 100%;
-    height: 9vh; }
   .remember {
     width: 37vh;
     margin: 5vh auto 6vh auto; }
     .remember label {
       font-size: 3vh;
       line-height: 2.1vh; }
+    .remember--reg {
+      width: 65vh; }
   .login__group label .icon {
     width: 4vh;
     height: 4vh;
@@ -1880,8 +1862,4 @@ a:focus, a:hover, a:active {
     .sign-up__button {
       width: 93%;
       font-size: 4vh;
-      height: 11vh; }
-  .login__group--inner {
-    justify-content: center; }
-  .remember--reg {
-    width: 65vh; } }
+      height: 11vh; } }

@@ -12,10 +12,8 @@
 // Custom
 // ============================================================
 
-// Now not use
 @import 'mixins'; // Mixins
 @import 'variables'; // Variables
-
 
 
 html {
@@ -58,7 +56,6 @@ a:focus, a:hover, a:active {
 	width: 100%;
 	background-color: #6E6E6E;
 	position: relative;
-	// HEADER Left-Side
 	&__left-side {
 		display: flex;
 		justify-content: space-between;
@@ -90,8 +87,6 @@ a:focus, a:hover, a:active {
 	display: flex;
 	justify-content: space-between;
 }
-
-
 
 // Соц.Сети
 .header__socials {
@@ -184,9 +179,6 @@ a:focus, a:hover, a:active {
 	transition: linear 0.3s all;
 }
 
-
-
-
 // HEADER Right-Side
 .header__right-side {
     padding-top: 2.5vh;
@@ -208,23 +200,20 @@ a:focus, a:hover, a:active {
 		line-height: 1.6vh;
 		color: #FFFFFF;
 		text-align: center;
-		border: 1px solid #A9C239;
+		border: 1px solid $color-base;
 		box-sizing: border-box;
 		width: 16.8vh;
 		height: 4vh;
 		margin-bottom: 0.6vh;
-		background: #A9C239;
+		background: $color-base;
 		&:last-child {
 			background: transparent;
 		}
 		&:hover {
-			background: #D8EE75;
-			transition: linear 0.3s all;
-			color: #3C3C3C;
+			@include btn-hover;
 		}
 	}
 }
-
 
 // Поиск
 .search-form {
@@ -251,7 +240,7 @@ a:focus, a:hover, a:active {
 		position: absolute;
 		top: 0;
 		right: 0;
-		background: #A9C239;
+		background: $color-base;
 		&:hover {
 			cursor: pointer;
 			background: #D8EE75;
@@ -268,21 +257,13 @@ a:focus, a:hover, a:active {
 
 
 
-
-
-
-
 //=================================//
 // HEADER MOBILE    after 768px    //
 //=================================//
 
-
-
-
 .header-mobile {
 	display: none;
 	width: 100%;
-	// HEADER Left-Side
 	&__top-side {
 		display: flex;
 		justify-content: center;
@@ -296,7 +277,7 @@ a:focus, a:hover, a:active {
 		}
 	}
 	&__down-side {
-		background-color: #A9C239;
+		background-color: $color-base;
 	}
 	&__contacts {
 		padding: 6vw 1vw;
@@ -320,7 +301,7 @@ a:focus, a:hover, a:active {
 
 .wrap-btn-main-mobile {
 	display: none;
-	background-color: #A9C239;
+	background-color: $color-base;
 	width: 90%;
 	height: 10vw;
 	margin: 0 auto;
@@ -359,32 +340,6 @@ a:focus, a:hover, a:active {
 	display: flex;
 	justify-content: space-between;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Уведомление под шапкой
 .alert {
@@ -432,16 +387,7 @@ a:focus, a:hover, a:active {
 .hide {
 	display: none;
 }
-
 // \END	Уведомление под шапкой
-
-
-
-
-
-
-
-
 
 
 
@@ -464,8 +410,6 @@ a:focus, a:hover, a:active {
 	padding-top: 5.5vh;
 	padding-bottom: 14.6vh;
 }
-
-
 
 .home__heading {
 	font-size: 1.2vh;
@@ -500,7 +444,7 @@ a:focus, a:hover, a:active {
 	color: #FFF;
 	width: 33.8vh;
 	height: 5.9vh;
-	background: #A9C239;
+	background: $color-base;
 	padding: 2.1vh 10vh;
 	&:hover {
 		background: #D8EE75;
@@ -514,7 +458,7 @@ a:focus, a:hover, a:active {
 	width: 25.2vh;
 	padding-top: 5.5vh;
 	&-block__item {
-		border-bottom: 1px solid #A9C239;
+		border-bottom: 1px solid $color-base;
 		padding: 1.3vh 0;
 		&:hover {
 			opacity: .7;
@@ -529,31 +473,25 @@ a:focus, a:hover, a:active {
 			opacity: .7;
 		}
 	}
+	.date {
+		font-size: 1.3vh;
+		line-height: 1.7vh;
+		color: $color-base;
+		padding-bottom: 1.2vh;
+	}
+
+	.title {
+		font-size: 1.4vh;
+		line-height: 1.8vh;
+		font-weight: 400;
+	}
 }
-
-.date {
-	font-size: 1.3vh;
-	line-height: 1.7vh;
-	color: #A9C239;
-	padding-bottom: 1.2vh;
-}
-
-.title {
-	font-size: 1.4vh;
-	line-height: 1.8vh;
-	font-weight: 400;
-}
-
-
-
-
 
 
 
 // ===========================================================//
 // Alert Registration PAGE STYLE	alert-registration.html	 //
 // =========================================================//
-
 
 .container--alert-registration {
 	width: 114vh;
@@ -582,7 +520,7 @@ a:focus, a:hover, a:active {
 		font-size: 1.9vh;
 		line-height: 2.2vh;
 		letter-spacing: 0.06em;
-		color: #A9C239;
+		color: $color-base;
 		text-align: center;
 		margin: 4.3vh auto 3.2vh auto;
 	}
@@ -597,15 +535,12 @@ a:focus, a:hover, a:active {
 		}
 	}
 }
-
-
 // Кропка "Выберите следующий шаг"
 
 .button--alert-registration {
 	display: flex;
     justify-content: center;
 	align-items: center;
-
 	margin: 5.5vh auto 0 auto;
 	font-size: 1.8vh;
     line-height: 2.1vh;
@@ -613,18 +548,13 @@ a:focus, a:hover, a:active {
     color: #FFF;
     width: 33.8vh;
     height: 5.9vh;
-    background: #A9C239;
+    background: $color-base;
 	&:hover {
 		background: #D8EE75;
 		transition: linear 0.3s all;
 		color: #3C3C3C;
 	}
 }
-
-
-
-
-
 
 
 
@@ -656,7 +586,7 @@ a:focus, a:hover, a:active {
 	padding-bottom: 1.8vh;
 }
 
-.button-enter{
+.button-enter {
 	display: flex;
     align-items: center;
     justify-content: center;
@@ -667,19 +597,19 @@ a:focus, a:hover, a:active {
 	color: #FFF;
 	width: 16.8vh;
 	height: 4vh;
-	background: #A9C239;
+	background: $color-base;
 	&:hover {
 		background: #D8EE75;
 		transition: linear 0.3s all;
 		color: #3C3C3C;
 	}
+	&--reg {
+		font-size: 1.4vh;
+		line-height: 1.6vh;
+		font-weight: 400;
+	}
 }
 
-.button-enter--reg {
-	font-size: 1.4vh;
-	line-height: 1.6vh;
-	font-weight: 400;
-}
 .wrapper-button-enter--reg {
 	margin: 3.8vh auto 0 auto;
 }
@@ -699,14 +629,9 @@ a:focus, a:hover, a:active {
 
 
 
-
-
-
-
 // ===================================================//
 // 	Contract Info PAGE STYLE	contract.html	 //
 // =================================================//
-
 
 .contact--container {
 	width: 114vh;
@@ -728,7 +653,7 @@ a:focus, a:hover, a:active {
 		font-weight: 900;
 		font-size: 1.8vh;
 		line-height: 2.1vh;
-		color: #A9C239;
+		color: $color-base;
 	}
 }
 
@@ -755,7 +680,6 @@ a:focus, a:hover, a:active {
 	}
 }
 
-
 // BUTTONS //
 .wrap-btn--contract {
 	display: flex;
@@ -780,7 +704,7 @@ a:focus, a:hover, a:active {
 	color: #FFF;
 	width: 44vh;
 	height: 4vh;
-	background: #A9C239;
+	background: $color-base;
 	&:hover {
 		background: #D8EE75;
 		transition: linear 0.3s all;
@@ -788,8 +712,6 @@ a:focus, a:hover, a:active {
 	}
 }
 // \End Button Legal
-
-
 
 // Button about kvorum
 .button-kvorum {
@@ -805,17 +727,13 @@ a:focus, a:hover, a:active {
 		color: #FFF;
 		width: 57vh;
 		height: 4vh;
-		background: #A9C239;
+		background: $color-base;
 		&:hover {
-			background: #D8EE75;
-			transition: linear 0.3s all;
-			color: #3C3C3C;
+			@include btn-hover;
 		}
 	}
 }
-
 // \End Button kvorum
-
 
 // Button Print
 .button-print {
@@ -831,21 +749,15 @@ a:focus, a:hover, a:active {
 		color: #FFF;
 		width: 16.8vh;
 		height: 4vh;
-		background: #A9C239;
+		background: $color-base;
 		border: none;
 		&:hover {
-			background: #D8EE75;
-			transition: linear 0.3s all;
-			color: #3C3C3C;
+			@include btn-hover;
 			cursor: pointer;
 		}
 	}
 }
 // \End Button kvorum
-
-
-
-
 
 
 
@@ -880,18 +792,13 @@ a:focus, a:hover, a:active {
 		color: #FFF;
 		width: 24.8vh;
 		height: 6vh;
-		background: #A9C239;
+		background: $color-base;
 		&:hover {
-			background: #D8EE75;
-			transition: linear 0.3s all;
-			color: #3C3C3C;
+			@include btn-hover;
 		}
 	}
 }
-
 // \End Button Exit
-
-
 
 // Button Offerta
 .button-offerta {
@@ -907,18 +814,13 @@ a:focus, a:hover, a:active {
 		color: #FFF;
 		width: 66vh;
 		height: 6vh;
-		background: #A9C239;
+		background: $color-base;
 		&:hover {
-			background: #D8EE75;
-			transition: linear 0.3s all;
-			color: #3C3C3C;
+			@include btn-hover;
 		}
 	}
 }
-
 // \End Button offerta 
-
-
 
 // Small header
 .container--header-small {
@@ -950,9 +852,6 @@ a:focus, a:hover, a:active {
 
 
 
-
-
-
 // ====================================================//
 // 	Offerta PAGE STYLE	offerta.html				 //
 // ===================================================//
@@ -969,7 +868,7 @@ a:focus, a:hover, a:active {
 		line-height: 1.7vh;
 	}
 	&__text a {
-		color: #A9C239;
+		color: $color-base;
 		text-decoration: underline;
 	}
 	&__title--main {
@@ -977,7 +876,7 @@ a:focus, a:hover, a:active {
 		font-size: 1.6vh;
 		line-height: 1.9vh;
 		text-align: center;
-		color: #A9C239;
+		color: $color-base;
 		margin-bottom: 4.5vh;
 		margin-top: 2.5vh;
 	}
@@ -986,7 +885,7 @@ a:focus, a:hover, a:active {
 		font-size: 1.6vh;
 		line-height: 1.9vh;
 		text-align: center;
-		color: #A9C239;
+		color: $color-base;
 		margin-bottom: 1.2vh;
 		margin-top: 2.8vh;
 	}
@@ -994,16 +893,14 @@ a:focus, a:hover, a:active {
 		text-align: right;
 		margin-bottom: 8vh;
 	}
+	&__stamp {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 7vh;
+	}
 }
-
 
 // Штамп
-.offerta__stamp {
-	display: flex;
-    justify-content: space-between;
-	margin-bottom: 7vh;
-}
-
 .stamp--first {
 	display: flex;
 	justify-content: flex-start;
@@ -1022,17 +919,9 @@ a:focus, a:hover, a:active {
 
 
 
-
-
-
-
-
-
 // ====================================================//
 // 	Login PAGE STYLE		login.html				 //
 // ===================================================//
-
-
 
 .login {
 	width: 64vh;
@@ -1072,11 +961,6 @@ a:focus, a:hover, a:active {
 	margin: 0 auto;
 }
 
-.login__group input[data-type="password"]{
-	text-security:circle;
-	-webkit-text-security:circle;
-}
-
 .login__group .label {
 	font-size: 1.4vh;
 	line-height: 1.6vh;
@@ -1101,7 +985,7 @@ a:focus, a:hover, a:active {
 	content:'';
 	width: 1.3vh;
 	height: 0.2vh;
-	background:#A9C239;
+	background:$color-base;
 	position: absolute;
 	transition: all .2s ease-in-out 0s;
 }
@@ -1171,7 +1055,6 @@ a:focus, a:hover, a:active {
 	}
 }
 
-
 .remember {
 	display: flex;
     justify-content: center;
@@ -1185,7 +1068,6 @@ a:focus, a:hover, a:active {
 	}
 }
 
-
 // Button Login
 .login__group--button {
 	display: flex;
@@ -1198,7 +1080,7 @@ a:focus, a:hover, a:active {
 	color: #FFF;
 	width: 35vh;
 	height: 6vh;
-	background: #A9C239;
+	background: $color-base;
 	border: none;
 	margin: 0 auto;
 	&:hover {
@@ -1209,7 +1091,6 @@ a:focus, a:hover, a:active {
 	}
 }
 // \End Button login
-
 
 
 
@@ -1233,6 +1114,9 @@ a:focus, a:hover, a:active {
 		color: #000;
 		text-align: center;
 	}
+	&__button {
+		margin: 2vh auto 2vh auto;
+	}
 }
 
 .login__group--inner {
@@ -1242,20 +1126,10 @@ a:focus, a:hover, a:active {
 }
 
 
-.sign-up__button {
-	margin: 2vh auto 2vh auto;
-}
-
-
-
-
-
-
 
 // ====================================================//
 // 	В разработке PAGE STYLE		in-developing.html	 //
 // ===================================================//
-
 
 .in-developing {
 	padding: 10vh 5vh 5vh 5vh;
@@ -1263,27 +1137,10 @@ a:focus, a:hover, a:active {
 	font-size: 3vh;
 }
 
-
-
-.header-mobile  {
+// any
+.header-mobile, .wrap-btn-main-mobile, .sign-up__title--mobile, .search-mobile  {
 	display: none;
 }
-
-.wrap-btn-main-mobile {
-	display: none;
-}
-
-.sign-up__title--mobile {
-	display: none;
-}
-
-
-.search-mobile {
-	display: none;
-}
-
-
-
 
 
 
@@ -1293,7 +1150,6 @@ a:focus, a:hover, a:active {
 // ====================================================//
 // 				MEDIA			for Tablet 			 //
 // ===================================================//
-
 
 
 @media screen and (orientation: portrait) {
@@ -1529,16 +1385,15 @@ a:focus, a:hover, a:active {
 		padding-bottom: 1.8vw;
 	}
 
-	.button-enter{
+	.button-enter {
 		font-size: 1.5vw;
 		line-height: 1.8vw;
 		width: 16.8vw;
 		height: 4vw;
-	}
-
-	.button-enter--reg {
-		font-size: 1.4vw;
-		line-height: 1.6vw;
+		&--reg {
+			font-size: 1.4vw;
+			line-height: 1.6vw;
+		}
 	}
 
 	.wrapper-button-enter--reg {
@@ -1592,13 +1447,12 @@ a:focus, a:hover, a:active {
 	.button-legal {
 		margin-top: 3.5vw;
 		justify-content: flex-start;
-	}
-
-	.button-legal-inner {
-		font-size: 1.6vw;
-		line-height: 1.9vw;
-		width: 44vw;
-		height: 4vw;
+		&-inner {
+			font-size: 1.6vw;
+			line-height: 1.9vw;
+			width: 44vw;
+			height: 4vw;
+		}
 	}
 
 	// Button about kvorum
@@ -1704,13 +1558,12 @@ a:focus, a:hover, a:active {
 		&__text--right {
 			margin-bottom: 8vw;
 		}
+		&__stamp {
+			margin-bottom: 7vw;
+		}
 	}
 
 	// Штамп
-	.offerta__stamp {
-		margin-bottom: 7vw;
-	}
-
 	.stamp--second {
 		& img {
 			width: 22vw;
@@ -1787,6 +1640,12 @@ a:focus, a:hover, a:active {
 		& input:not(:placeholder-shown)+label{
 		top: 1.7vw;
 		}
+		&--button {
+			font-size: 1.8vw;
+			line-height: 2.1vw;
+			width: 35vw;
+			height: 6vw;
+		}
 	}
 
 	.remember {
@@ -1796,20 +1655,10 @@ a:focus, a:hover, a:active {
 			font-size: 1.2vw;
 			line-height: 1.4vw;
 		}
+		&--reg {
+			width: 28vw;
+		}
 	}
-
-	.remember--reg {
-		width: 28vw;
-	}
-
-	// Button Login
-	.login__group--button {
-		font-size: 1.8vw;
-		line-height: 2.1vw;
-		width: 35vw;
-		height: 6vw;
-	}
-	// \End Button login
 
 	// ===========================================================//
 	// 		MEDIA FOR 	for Tablet 				sign-up.html	 //
@@ -1824,10 +1673,9 @@ a:focus, a:hover, a:active {
 			font-size: 1.5vw;
 			line-height: 1.8vw;
 		}
-	}
-
-	.sign-up__button {
-		margin: 2vw auto 2vw auto;
+		&__button {
+			margin: 2vw auto 2vw auto;
+		}
 	}
 
 	// ====================================================//
@@ -1851,17 +1699,15 @@ a:focus, a:hover, a:active {
 
 
 
-
-
-
-
 				// ===========================================================//
 				// 			MEDIA FOR Phone			orientation: portrait	 //
 				// =========================================================//
 
 
+
+
 @media screen and (max-width: 767px) and (orientation: portrait) {
-	.header, .news, .home__heading {
+	.header, .news, .home__heading, .button--main {
 		display: none;
 	}
 
@@ -1885,10 +1731,6 @@ a:focus, a:hover, a:active {
 		}
 	}
 
-	.button--main {
-		display: none;
-	}
-
 	//===============================================================//
 	// HEADER MOBILE   		 and 		orientation: portrait 		  //
 	//=============================================================//
@@ -1909,7 +1751,7 @@ a:focus, a:hover, a:active {
 			}
 		}
 		&__down-side {
-			background-color: #A9C239;
+			background-color: $color-base;
 		}
 		&__contacts {
 			padding: 6vw 1vw;
@@ -1933,7 +1775,7 @@ a:focus, a:hover, a:active {
 
 	.wrap-btn-main-mobile {
 		display: flex;
-		background-color: #A9C239;
+		background-color: $color-base;
 		width: 90%;
 		height: 10vw;
 		margin: 0 auto;
@@ -2147,7 +1989,7 @@ a:focus, a:hover, a:active {
 		&-inner {
 			font-size: 3.5vw;
 			line-height: 4vw;
-    		text-align: center;
+			text-align: center;
 			font-weight: 400;
 			width: 100%;
 			height: 10vw;
@@ -2161,13 +2003,13 @@ a:focus, a:hover, a:active {
 		&-inner {
 			font-size: 3.5vw;
 			line-height: 4vw;
-    		text-align: center;
+			text-align: center;
 			font-weight: 400;
 			width: 100%;
 			height: 10vw;
 			padding: 0 3vw;
 			background-color: transparent;
-			border: 1px solid #A9C239;
+			border: 1px solid $color-base;
 			color: #5A5A5A;
 		}
 	}
@@ -2203,20 +2045,18 @@ a:focus, a:hover, a:active {
 			text-align: right;
 			margin-bottom: 8vw;
 		}
-	}
-
-	// Штамп
-	.offerta__stamp {
-		flex-direction: column;
-		margin-bottom: 10vw;
-		margin-top: 6vw;
+		&__stamp {
+			flex-direction: column;
+			margin-bottom: 10vw;
+			margin-top: 6vw;
+		}
 	}
 
 	.stamp--second {
 		flex-direction: column;
 		& img {
 			width: 55vw;
-    		height: 55vw;
+			height: 55vw;
 		}
 	}
 
@@ -2226,7 +2066,6 @@ a:focus, a:hover, a:active {
 		text-align: center;
 		width: 75vw;
 		height: 13vw;
-
 		padding: 0 2vh;
 		margin: 0 auto;
 	}
@@ -2239,7 +2078,7 @@ a:focus, a:hover, a:active {
 		margin-top: 30vw;
 		font-size: 3.6vw;
 		line-height: 4.9vw;
-    	text-align: center;
+		text-align: center;
 	}
 
 	.button-about-kvorum {
@@ -2276,31 +2115,32 @@ a:focus, a:hover, a:active {
 			font-size: 4vw;
 		}
 	}
+
 	.login__group {
 		padding-top: 6vw;
 		margin-bottom: 1vw;
+		&--inner {
+			justify-content: center;
+		}
+		& .input {
+			width: 75vw;
+			height: 10vw;
+		}
+		& .label {
+			font-size: 3vw;
+			line-height: 5.6vw;
+			top: 8vw;
+		}
+		&--button {
+			font-size: 3.5vw;
+			line-height: 2.1vw;
+			width: 100%;
+			height: 9vw;
+		}
 	}
 
-	.login__group .input {
-		width: 75vw;
-		height: 10vw;
-	}
-
-	.login__group .label {
-		font-size: 3vw;
-		line-height: 5.6vw;
-		top: 8vw;
-	}
-	
 	.login__group input:focus+label, .login__group input:not(:placeholder-shown)+label {
 		top: 1vw;
-	}
-
-	.login__group--button {
-		font-size: 3.5vw;
-		line-height: 2.1vw;
-		width: 100%;
-		height: 9vw;
 	}
 
 	.remember {
@@ -2309,6 +2149,9 @@ a:focus, a:hover, a:active {
 		& label {
 			font-size: 3vw;
 			line-height: 2.1vw;
+		}
+		&--reg {
+			width: 65vw;
 		}
 	}
 
@@ -2333,6 +2176,7 @@ a:focus, a:hover, a:active {
 		top: 1.7vw;
 		right: -0.2vw;
 	}
+
 	// ===========================================================//
 	// 	sign-up.html		orientation: portrait				 //
 	// =========================================================//
@@ -2359,14 +2203,6 @@ a:focus, a:hover, a:active {
 			margin-bottom: 5vw;
 		}
 	}
-
-	.login__group--inner {
-		justify-content: center;
-	}
-
-	.remember--reg {
-		width: 65vw;
-	}
 }
 
 
@@ -2390,7 +2226,7 @@ a:focus, a:hover, a:active {
 
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
-	.header, .news, .home__heading {
+	.header, .news, .home__heading, .button--main  {
 		display: none;
 	}
 
@@ -2414,10 +2250,6 @@ a:focus, a:hover, a:active {
 		}
 	}
 
-	.button--main {
-		display: none;
-	}
-
 	//==============================================================--==//
 	// HEADER MOBILE    after 900px 	 and orientation: landscape	   //
 	//================================================================//
@@ -2439,7 +2271,7 @@ a:focus, a:hover, a:active {
 			}
 		}
 		&__down-side {
-			background-color: #A9C239;
+			background-color: $color-base;
 		}
 		&__contacts {
 			padding: 6vh 1vh;
@@ -2463,7 +2295,7 @@ a:focus, a:hover, a:active {
 
 	.wrap-btn-main-mobile {
 		display: flex;
-		background-color: #A9C239;
+		background-color: $color-base;
 		width: 90%;
 		height: 13vh;
 		margin: 0 auto;
@@ -2659,14 +2491,13 @@ a:focus, a:hover, a:active {
 
 	.button-legal {
 		margin-top: 3.5vh;
-	}
-
-	.button-legal-inner {
-		font-size: 3.5vh;
-		line-height: 1.9vh;
-		width: 100%;
-    	height: 10vh;
-		padding: 0 3vw;
+		&-inner {
+			font-size: 3.5vh;
+			line-height: 1.9vh;
+			width: 100%;
+			height: 10vh;
+			padding: 0 3vw;
+		}
 	}
 
 	.button-kvorum {
@@ -2674,7 +2505,7 @@ a:focus, a:hover, a:active {
 		&-inner {
 			font-size: 3.5vh;
 			line-height: 4vh;
-    		text-align: center;
+			text-align: center;
 			font-weight: 400;
 			width: 100%;
 			height: 10vh;
@@ -2687,13 +2518,13 @@ a:focus, a:hover, a:active {
 		&-inner {
 			font-size: 3.5vh;
 			line-height: 4vh;
-    		text-align: center;
+			text-align: center;
 			font-weight: 400;
 			width: 100%;
 			height: 10vh;
 			padding: 0 3vw;
 			background-color: transparent;
-			border: 1px solid #A9C239;
+			border: 1px solid $color-base;
 			color: #5A5A5A;
 		}
 	}
@@ -2729,11 +2560,9 @@ a:focus, a:hover, a:active {
 			text-align: right;
 			margin-bottom: 8vh;
 		}
-	}
-
-	// Штамп
-	.offerta__stamp {
-		margin-bottom: 7vh;
+		&__stamp {
+			margin-bottom: 7vh;
+		}
 	}
 
 	.stamp--second {
@@ -2767,7 +2596,7 @@ a:focus, a:hover, a:active {
 	}
 
 	.button-exit {
-    margin-left: 0;
+		margin-left: 0;
 		&-inner {
 			font-size: 3.6vh;
 			line-height: 4.9vh;
@@ -2777,7 +2606,6 @@ a:focus, a:hover, a:active {
 			margin: 0 auto;
 		}
 	}
-
 
 	// =======================================================//
 	// 	login.html		orientation: landscape				 //
@@ -2797,28 +2625,27 @@ a:focus, a:hover, a:active {
 	.login__group {
 		padding-top: 6vh;
 		margin-bottom: 1vh;
+		& .input {
+			width: 75vh;
+			height: 10vh;
+		}
+		& .label {
+			font-size: 3vh;
+			line-height: 5.6vh;
+			top: 8vh;
+		}
+		&--button {
+			font-size: 3.5vh;
+			line-height: 2.1vh;
+			width: 100%;
+			height: 9vh;
+		}
+		&--inner {
+			justify-content: center;
+		}
 	}
-
-	.login__group .input {
-		width: 75vh;
-		height: 10vh;
-	}
-
-	.login__group .label {
-		font-size: 3vh;
-		line-height: 5.6vh;
-		top: 8vh;
-	}
-
 	.login__group input:focus+label, .login__group input:not(:placeholder-shown)+label {
 		top: 1vh;
-	}
-
-	.login__group--button {
-		font-size: 3.5vh;
-		line-height: 2.1vh;
-		width: 100%;
-		height: 9vh;
 	}
 
 	.remember {
@@ -2827,6 +2654,9 @@ a:focus, a:hover, a:active {
 		& label {
 			font-size: 3vh;
 			line-height: 2.1vh;
+		}
+		&--reg {
+			width: 65vh;
 		}
 	}
 
@@ -2876,13 +2706,4 @@ a:focus, a:hover, a:active {
 			height: 11vh;
 		}
 	}
-
-	.login__group--inner {
-		justify-content: center;
-	}
-
-	.remember--reg {
-		width: 65vh;
-	}
 }	
-

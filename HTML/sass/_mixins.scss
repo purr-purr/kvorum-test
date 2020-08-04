@@ -1,18 +1,11 @@
 // --------------------------------------------------
-// RGBA Background Opacity
+// button::hover
 // --------------------------------------------------
 
-// eg: @include bg-opacity($color-dark, .2);
-@mixin bg-opacity($color, $opacity: 0.3) {
-    background: rgba($color, $opacity);
-}
 
-// --------------------------------------------------
-// display: flex / justify-content: space-between;
-// --------------------------------------------------
-
-// eg: @include flex-space-betweem;
-@mixin flex-space-betweem {
-    display: flex;
-    justify-content: space-between;
+// eg: @include btn-hover;
+@mixin btn-hover {
+    background: #D8EE75;
+    transition: linear 0.3s all;
+    color: #3C3C3C;
 }
