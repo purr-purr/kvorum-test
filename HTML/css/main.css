@@ -866,7 +866,7 @@ a:focus, a:hover, a:active {
 
 .sign-up {
   width: 92vh;
-  height: 76vh;
+  height: auto;
   margin: 0 auto;
   background: #FFFFFF;
   box-shadow: 5px 5px 4px rgba(117, 117, 117, 0.1);
@@ -884,14 +884,6 @@ a:focus, a:hover, a:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-
-.recaptcha {
-  display: flex;
-  flex-direction: column; }
-  .recaptcha img {
-    margin: 0 auto;
-    width: 24.5vh;
-    height: 7.7vh; }
 
 .sign-up__button {
   margin: 2vh auto 2vh auto; }
@@ -1227,9 +1219,6 @@ a:focus, a:hover, a:active {
     .sign-up__title {
       font-size: 1.5vw;
       line-height: 1.8vw; }
-  .recaptcha img {
-    width: 24.5vw;
-    height: 7.7vw; }
   .sign-up__button {
     margin: 2vw auto 2vw auto; }
   .in-developing {
@@ -1570,10 +1559,7 @@ a:focus, a:hover, a:active {
   .login__group--inner {
     justify-content: center; }
   .remember--reg {
-    width: 65vw; }
-  .recaptcha img {
-    width: 58.5vw;
-    height: 17.7vw; } }
+    width: 65vw; } }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .header, .news, .home__heading {
@@ -1898,7 +1884,4 @@ a:focus, a:hover, a:active {
   .login__group--inner {
     justify-content: center; }
   .remember--reg {
-    width: 65vh; }
-  .recaptcha img {
-    width: 58.5vh;
-    height: 17.7vh; } }
+    width: 65vh; } }

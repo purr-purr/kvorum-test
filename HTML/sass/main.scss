@@ -264,7 +264,6 @@ a:focus, a:hover, a:active {
 		}
 	}
 }
-
 // \Поиск
 
 
@@ -302,17 +301,15 @@ a:focus, a:hover, a:active {
 	&__contacts {
 		padding: 6vw 1vw;
 		width: max-content;
-    	margin: 0 auto;
+		margin: 0 auto;
 	}
 	&__logo {
-		// max-width: 28vh;
-		// max-height: 8.7vh;
 		max-width: 49vw;
 		max-height: 11.7vw;
 	}
 	&__tagline {
 		display: block;
-    	text-align: center;
+		text-align: center;
 		& p {
 			color: #181818;
 			font-size: 3.2vw;
@@ -1222,7 +1219,7 @@ a:focus, a:hover, a:active {
 
 .sign-up {
 	width: 92vh;
-	height: 76vh;
+	height: auto;
 	margin: 0 auto;
 	background: #FFFFFF;
 	box-shadow: 5px 5px 4px rgba(117, 117, 117, 0.1);
@@ -1244,28 +1241,6 @@ a:focus, a:hover, a:active {
 	justify-content: space-between;
 }
 
-// .recaptcha {
-// 	display: flex;
-//     flex-direction: column;
-// 	width: 31vh;
-//     height: 8vh;
-// 	margin: 0 auto;
-// 	& div {
-// 		margin: 0 auto;
-// 		display: flex;
-// 		justify-content: center;
-// 	}
-// }
-
-.recaptcha {
-	display: flex;
-    flex-direction: column;
-	& img {
-		margin: 0 auto;
-		width: 24.5vh;
-		height: 7.7vh;
-	}
-}
 
 .sign-up__button {
 	margin: 2vh auto 2vh auto;
@@ -1851,18 +1826,6 @@ a:focus, a:hover, a:active {
 		}
 	}
 
-	// .recaptcha {
-	// 		width: 31vw;
-	//     height: 8vw;
-	// }
-
-	.recaptcha {
-		& img {
-			width: 24.5vw;
-			height: 7.7vw;
-		}
-	}
-
 	.sign-up__button {
 		margin: 2vw auto 2vw auto;
 	}
@@ -2099,6 +2062,7 @@ a:focus, a:hover, a:active {
 	.search-form__input--reg {
 		display: none;
 	}
+
 	.search-mobile {
 		display: block;
 		width: 80.1vw;
@@ -2277,12 +2241,15 @@ a:focus, a:hover, a:active {
 		line-height: 4.9vw;
     	text-align: center;
 	}
+
 	.button-about-kvorum {
 		padding: 0 3vh;
 	}
+
 	.wrap-btn--about-kvorum {
 		flex-direction: column;
 	}
+
 	.button-exit {
     margin-left: 0;
 		&-inner {
@@ -2392,17 +2359,14 @@ a:focus, a:hover, a:active {
 			margin-bottom: 5vw;
 		}
 	}
+
 	.login__group--inner {
 		justify-content: center;
 	}
+
 	.remember--reg {
 		width: 65vw;
 	}
-	.recaptcha img {
-		width: 58.5vw;
-		height: 17.7vw;
-	}
-
 }
 
 
@@ -2624,9 +2588,11 @@ a:focus, a:hover, a:active {
 		margin: 6vh auto 0 auto;
 		width: 95%;
 	}
+
 	.search-form__input--reg {
 		display: none;
 	}
+
 	.search-mobile {
 		display: block;
 		width: 80.1vh;
@@ -2795,9 +2761,11 @@ a:focus, a:hover, a:active {
 		font-size: 3.6vh;
 		line-height: 9.9vh;
 	}
+
 	.wrap-btn--about-kvorum {
 		flex-direction: column;
 	}
+
 	.button-exit {
     margin-left: 0;
 		&-inner {
@@ -2825,6 +2793,7 @@ a:focus, a:hover, a:active {
 			font-size: 4vh;
 		}
 	}
+
 	.login__group {
 		padding-top: 6vh;
 		margin-bottom: 1vh;
@@ -2907,15 +2876,13 @@ a:focus, a:hover, a:active {
 			height: 11vh;
 		}
 	}
+
 	.login__group--inner {
 		justify-content: center;
 	}
+
 	.remember--reg {
 		width: 65vh;
-	}
-	.recaptcha img {
-		width: 58.5vh;
-		height: 17.7vh;
 	}
 }	
 
